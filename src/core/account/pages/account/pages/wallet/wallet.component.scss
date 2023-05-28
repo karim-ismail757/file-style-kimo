@@ -1,0 +1,149 @@
+.wallet{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/38px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+font-weight: bold;
+text-align: left;
+font: normal normal medium 32px/38px Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+font-size: 32px;
+margin-top: 20px;
+margin-left: 20px;
+margin-bottom: 30px;
+}
+
+.card{
+    display: flex;
+    justify-content: center;
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 16px;
+opacity: 1;
+height: 133px;
+
+}
+
+.total-balance{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/17px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--safe-text);
+font: normal normal normal 14px/17px Rubik;
+letter-spacing: 0px;
+color: #828894;
+opacity: 1;
+margin-top: 10px;
+font-size: 14px;
+}
+
+.total-price{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-22)/27px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+font: normal normal medium 22px/27px Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+}
+
+.date{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/17px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--safe-text);
+font: normal normal normal 14px/17px Rubik;
+letter-spacing: 0px;
+color: #828894;
+opacity: 1;
+font-size: 14px;
+}
+
+.coupoun-card{
+    height: 280px;
+    display: flex;
+    justify-content: center;
+
+
+}
+
+.total-coupouns{
+    color: var(--unnamed-color-1b1d1f);
+    letter-spacing: NaNpx;
+    color: #1B1D1F;
+    opacity: 1;
+    font-size: 22px;
+}
+
+.currency{
+    font-size: 14px;;
+}
+
+.coupoun-code{
+    background: var(--unnamed-color-f6f9ff) 0% 0% no-repeat padding-box;
+background: #F6F9FF 0% 0% no-repeat padding-box;
+opacity: 1;
+text-align: center;
+width: 152px;
+height: 47px;
+margin-left: 15px;
+border-radius: 8px;
+display: flex;
+justify-content: center;
+
+}
+
+.code{
+    font-family: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-22)/27px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-8f9bb3);
+font-family:  Rubik;
+letter-spacing: 0px;
+color: #8F9BB3;
+opacity: 1;
+margin-top: 7px;
+font-size: 22px;
+}
+
+.empty-square{
+    background: var(--unnamed-color-e4e9f2) 0% 0% no-repeat padding-box;
+background: #E4E9F2 0% 0% no-repeat padding-box;
+border-radius: 8px;
+opacity: 1;
+height: 37px;
+width:40px;
+margin-left: 15px;
+margin-top: 12px;
+margin-left: 15px;
+}
+
+.salon-name{
+    margin-top: 12px;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/15px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+font: normal normal normal 14px/15px Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+font-size: 14px;
+
+}
+
+@media (max-width: 991.98px) { 
+
+    .col-md-2{
+        width:36%;
+        margin-bottom: 30px; 
+    }
+ }
+
+
+ @media (max-width: 575.98px) { 
+    .col-md-2{
+        width:100%;
+        display:flex;
+        justify-content: center;
+        margin-bottom: 30px;
+    }
+
+  }

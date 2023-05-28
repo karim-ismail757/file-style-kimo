@@ -1,0 +1,90 @@
+.main-content{
+    top: 215px;
+    left: 622px;
+    width: 676px;
+    height: 651px;
+    /* UI Properties */
+    background: var(--unnamed-color-f6f9ff) 0% 0% no-repeat padding-box;
+    background: #F6F9FF 0% 0% no-repeat padding-box;
+    border-radius: 21px;
+    opacity: 1;
+
+}
+
+.container{
+    display: flex;
+    justify-content: center;
+}
+
+.upper-content{
+    width: 676px;
+height: 96px;
+/* UI Properties */
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 20px 20px 0px 0px;
+opacity: 1;
+}
+
+.close-icon{
+    width: 48px;
+height: 48px;
+}
+.map-btn{
+padding-left:20px;
+padding-right:20px;
+padding:10px 30px 10px 30px ;
+
+/* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-rubik);
+color: var(--safe-text);
+text-align: left;
+font: normal normal normal 16px/24px Rubik;
+letter-spacing: 0.15px;
+color: #828894;
+opacity: 1;
+margin-left: 20px;
+border: 1px solid black;
+margin-top: 20px;
+}
+
+.address-btn{
+    padding-left:20px;
+    padding-right:20px;
+    padding:10px 30px 10px 30px ;
+    
+    /* UI Properties */
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-rubik);
+    color: var(--safe-text);
+    text-align: left;
+    font: normal normal normal 16px/24px Rubik;
+    letter-spacing: 0.15px;
+    color: #fff;
+    opacity: 1;
+    border: 1px solid black;
+    background-color: black;
+    margin-right: 20px;
+    margin-top: 20px;
+
+}
+
+.form-control{
+    /* UI Properties */
+background: var(--inputs) 0% 0% no-repeat padding-box;
+background: #F0F1F2 0% 0% no-repeat padding-box;
+border-radius: 8px;
+opacity: 1;
+height: 56px;
+margin-bottom: 12px;
+
+}
+
+.address-heading{
+    position: relative;
+    top:20px;
+}
+
+.close-icon{
+    position: relative;
+    top:15px;
+}

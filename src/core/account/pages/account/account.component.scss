@@ -1,0 +1,109 @@
+.row{
+    // background-color: #F2F4F7;
+    background-color: #F2F4F7;
+    height: 1000px;
+}
+
+.side-bar-container{
+/* UI Properties */
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+opacity: 1;
+}
+.man{
+    background: transparent  0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 10px #00000017;
+border-radius: 48px;
+opacity: 1;
+width: 120px;
+height: 120px;
+}
+
+.upper-side-bar{
+    margin-top: 40px;;
+}
+
+.user-name{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 24px/var(--unnamed-line-spacing-28) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+text-align: left;
+font: normal normal medium 24px/28px Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+font-size: 24px;
+}
+
+.phone-no{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--safe-text);
+text-align: left;
+font: normal normal normal 18px/22px Rubik;
+letter-spacing: 0px;
+color: #828894;
+opacity: 1;
+font-size: 18px;
+}
+
+.secondary-bar-content{
+    margin-left: 20px;
+    margin-top:25px ;
+}
+
+.ul{
+    margin-top: 60px;
+
+}
+
+.list-group-item{
+    margin-bottom: 40px;
+
+
+}
+.list-group-item a{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-18)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+text-align: left;
+font-family: Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+font-size: 18px;
+text-decoration: none;
+margin-left: 120px;
+
+}
+.active{
+    /* UI Properties */
+background: #F2F4F7 0% 0% no-repeat padding-box;
+border-radius: 24px 0px 0px 24px;
+opacity: 1;
+
+
+height: 78px;
+}
+
+.active a{
+    margin-top: 30px;
+  
+        margin-top: 82px;
+        position: relative;
+        top: 31px;
+        left: -10px;
+        padding-right: 30px;
+    
+}
+
+.list-group-item{
+    white-space: nowrap;
+    margin-right: 30px;
+}
+
+.com-md-8{
+    background-color: #F2F4F7;
+    height: 100%;
+
+}

@@ -1,0 +1,113 @@
+.nav{
+    height: 56px;
+/* UI Properties */
+background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 1px 1px #00000029;
+opacity: 1;
+}
+
+.nav-link{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-16)/25px Poppins;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+text-align: center;
+font-family: Poppins;
+font-weight: bold;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+margin-top: 10px;
+}
+
+.dot{
+    border-radius: 50%;
+    background: #EBA509 0% 0% no-repeat padding-box;
+opacity: 1;
+width: 10px;
+height: 10px;
+margin-top: 10px;
+margin-right: 5px;
+}
+
+.dot2{
+    border-radius: 50%;
+    background: #34C759 0% 0% no-repeat padding-box;
+opacity: 1;
+width: 10px;
+height: 10px;
+margin-top: 10px;
+margin-right: 5px;
+}
+
+.packages{
+    margin-left: 12px;
+}
+
+.btn-container{
+
+    position: relative;
+    top:60px;
+}
+
+.down-content{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 4px 16px #00000014;
+border-radius: 4px;
+opacity: 1;
+padding: 20px;
+margin-top: 30px;
+}
+
+.price-no{
+    color: #992E79;
+    font-weight: bold;
+}
+
+.btn-cancel{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/var(--unnamed-line-spacing-21) Poppins;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #F03B56;
+    font-weight: bold;
+    opacity: 1;
+}
+
+.btn-details{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 14px/var(--unnamed-line-spacing-21) Poppins;
+    letter-spacing: var(--unnamed-character-spacing-0);
+    text-align: center;
+    font-family: Poppins;
+    letter-spacing: 0px;
+    color: #3582F5;
+    opacity: 1;
+    font-weight: bold;
+}
+
+.booking-head{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 24px/35px Poppins;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+text-align: left;
+font-family: Poppins;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+font-size: 24px;
+font-weight: bold;
+margin-top:30px;
+}
+
+
+@media (max-width: 991.98px) { 
+
+    .btn-container{
+        position: relative;
+        top:70px;
+        white-space: nowrap;
+        padding-top: 30px;
+    }
+ }

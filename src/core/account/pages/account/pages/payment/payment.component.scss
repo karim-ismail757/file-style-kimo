@@ -1,0 +1,83 @@
+.box-content{
+    background: #F2F4F7 0% 0% no-repeat padding-box;
+border: 1px solid #E5E9F1;
+border-radius: 8px;
+opacity: 1;
+margin-bottom: 20px;
+margin-left: 5px;
+}
+
+.payment-heading{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/38px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+text-align: left;
+font-family: Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+font-size: 32px;
+margin-top: 20px;
+}
+
+.transaction{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 32px/38px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-1b1d1f);
+text-align: left;
+font-family: Rubik;
+letter-spacing: 0px;
+color: #1B1D1F;
+opacity: 1;
+text-transform: uppercase;
+font-size: 32px;
+margin-top: 20px;
+}
+
+.date{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--safe-text);
+text-align: left;
+font-family: Rubik;
+letter-spacing: 0px;
+color: #828894;
+opacity: 1;
+font-size: 20px;
+}
+
+.cache-back{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-17)/var(--unnamed-line-spacing-22) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-3c3c4399);
+text-align: left;
+font-family: Rubik;
+letter-spacing: 0px;
+color: #3C3C4399;
+opacity: 1;
+font-size: 17px;
+}
+
+.money{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+text-align: left;
+font-family:  Rubik;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+.color{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold) var(--unnamed-font-size-20)/var(--unnamed-line-spacing-24) var(--unnamed-font-family-rubik);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-000000);
+    text-align: left;
+    font-family: Rubik;
+    letter-spacing: 0px;
+    color: #000000;
+    opacity: 1;
+    font-size: 20px;
+    font-weight: bold;
+}

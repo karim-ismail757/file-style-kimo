@@ -1,0 +1,229 @@
+*{
+    overflow: hidden;
+  }
+  
+  .cart-card {
+    display: flex;
+    justify-content: space-between;
+    border: 1px solid #ccc;
+    padding: 15px;
+    border-radius: 12px;
+    margin: 15px 0;
+  
+    img {
+      width: 100px;
+      margin-inline-end: 15px;
+    }
+  }
+  .section {
+    padding: 50px 0;
+  }
+  
+  .btn-buy {
+    background: #ffffff;
+    margin: 10px;
+    display: block;
+    color: #fff;
+    font-size: 14px;
+    border-radius: 0px;
+    padding: 5px 15px;
+    border: 1px solid #ddd;
+    text-align: center;
+    img {
+      width: 60px;
+    }
+  }
+  
+  .btn-pay {
+    .btn {
+      box-shadow: 0px 1px 6px #0000002b;
+      padding: 1px;
+      border-radius: 8px;
+      font-size: 18px;
+      font-weight: 700;
+      margin: 10px;
+      width: 125px;
+      height: 100px;
+      i {
+        display: block;
+        font-size: 34px;
+        color: #000;
+      }
+    }
+    .btn.active {
+      // background-color: #992e79;
+      border: 3px solid #666;
+    }
+  }
+  
+  .Services-container{
+    background-color: #fff;
+    padding:25px;
+    border-radius:20px;
+  
+  }
+  
+  .services-main-img{
+    width:88px;
+    height:88px ;
+    direction:ltr;
+    border-radius: 12px;
+  }
+  
+  .service-name{
+  color: #3F3D56;
+  text-transform: capitalize;
+  opacity: 1;
+  font-size: 18px;
+  margin-right: 20px;
+  color:#3F3D56;
+  margin-top: 12px;
+  
+  }
+  span{
+    color:#3F3D56;
+    font-size: 14px;
+    margin-right: 4px;
+  
+    // span:nth-child(1){
+    //   margin-left: 5px;
+    // }
+  }
+  
+  .service-time-empployee{
+    margin-right: -8px;
+  
+    .clock{
+    }
+  }
+  
+  .price-value{
+    color:#111C4E;
+    font-size: 16px;
+    direction: ltr;
+  }
+  
+  .trash-icon{
+    margin-top: 35px;
+  }
+  
+  .service-name{
+    font-size: 14px;
+    direction: ltr;
+    color:#3F3D56;
+    margin-left: 20px;
+  
+  
+  }
+  .Services-container{margin-top: 15px;
+  margin-bottom: 20px;
+  }
+  
+  .plus-minus-container{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+  
+    flex-direction: column;
+    margin-right: 15px;
+    margin-top: -2px;
+    background: #FFFFFF 0% 0% no-repeat padding-box;
+    border: 1px solid #9E9DAA;
+    border-radius: 4px;
+    opacity: 1;
+    width:40px;
+    height:120px;
+  }
+  
+  .plus,.minus{
+    margin-right: 18px;
+    margin-bottom: 7px;
+  }
+  
+  .services-main-img{
+    width:88px;
+    height:88px ;
+    direction:ltr;
+    border-radius: 12px;
+  }
+  
+  .time-slot-container{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border-radius: 8px;
+  opacity: 1;
+  padding-right:15px;
+  margin-left: 15px;
+  padding-top:15px;
+  padding-bottom: 15px;
+  width: 368px;
+  position: relative;
+  right:13px;
+  
+  }
+  
+  .span-icons-X{
+    margin-left: 38px !important;;
+  }
+  .clock-container{
+    margin-left: 35px;
+  }
+  
+  .person-container{
+    margin-right: 35px;
+  }
+  
+  .time-slot-info{
+    letter-spacing: var(--unnamed-character-spacing-0);
+    font: normal normal medium 16px/56px Poppins;
+    letter-spacing: 0px;
+    text-transform: capitalize;
+    opacity: 1;
+    font-size: 18px;
+    color:#3F3D56;
+    position: relative;
+    right:200px;
+  }
+  
+  .hours{
+    margin-left: 2px;
+  }
+  
+  .left-content,.x-content {
+    // position: relative;
+    // right: 100px;
+  }
+  
+  .x-content{
+    margin-right: -100px;
+  }
+  
+  .btn-delete{
+  border: 1px solid var(--safe-text);
+  background: #FFFFFF 0% 0% no-repeat padding-box;
+  border: 1px solid #828894;
+  border-radius: 8px;
+  color: black;
+  }
+  
+  .package-one,.service-one{
+    // position: relative !important;
+    
+  }
+
+  .cart-content{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border-radius: 8px;
+opacity: 1;
+margin-bottom: 25px;
+padding: 35px;
+  }
+
+  section{
+    background-color: #F5F6F9;
+  }
+
+  .inner-right,up-inner,.product-heading,.right-icons,.left-icons{
+    margin-left: 20px;
+  }
