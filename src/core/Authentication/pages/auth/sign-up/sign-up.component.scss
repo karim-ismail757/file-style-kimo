@@ -1,0 +1,210 @@
+* {
+    font-family:Poppins;
+    padding-bottom: 13px;
+  }
+  body {
+    background-color: #f2f4f7;
+    overflow-x: hidden;
+  }
+  .signup-container {
+    background-color: #fff;
+    width: 456px;
+    height: 457px;
+    border-radius: 16px;
+    opacity: 1;
+    /* position: relative;
+  top:70px;
+  left:300px; */
+    margin-top: 65px;
+  }
+  
+  .signup {
+    height: 100%;
+    width: 100%;
+  }
+  
+  .signup-heading {
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-bold)
+      var(--unnamed-font-size-34) / var(--unnamed-line-spacing-41)
+      var(--unnamed-font-family-rubik);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-1b1d1f);
+    text-align: left;
+    font: normal normal bold 34px/41px Rubik;
+    letter-spacing: 0px;
+    color: #1b1d1f;
+    opacity: 1;
+    padding-top: 60px;
+    padding-left: 60px;
+  }
+  
+  .second-signup-heading {
+    font: var(--unnamed-font-style-normal) normal
+      var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+      var(--unnamed-line-spacing-21) var(--unnamed-font-family-rubik);
+    letter-spacing: var(--unnamed-character-spacing-0);
+    color: var(--unnamed-color-3c3c4399);
+    text-align: left;
+    font: normal normal normal 16px/21px Rubik;
+    letter-spacing: 0px;
+    color: #3c3c4399;
+    opacity: 1;
+    padding-left: 60px;
+  }
+  .country-container {
+    width: 328px;
+    height: 44px;
+  }
+  
+  .signup-btn {
+    background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
+    background: #111c4e 0% 0% no-repeat padding-box;
+    border-radius: 6px;
+    opacity: 1;
+    color: #fff;
+    width: 328px;
+    height: 48px;
+    height: 54px !important;
+
+  }
+  ::placeholder {
+    letter-spacing: 0px;
+    color: #77797a;
+    text-transform: uppercase;
+    font-size: 14px;
+  }
+  
+  .login-container {
+    font: normal normal normal 13px/18px Rubik;
+    letter-spacing: 0px;
+    color: #3c3c4399;
+    margin-left: 12px;
+  }
+  
+  .form-control{
+      background-color: #F2F4F7;
+  
+  
+  }
+  .dropdown-toggle::after{
+      display: none;
+  }
+  
+  .login-link{
+      letter-spacing: 0px;
+  color: #1D1D1D;
+  text-decoration: none;
+  font-size: 13px;
+  
+  }
+  .arrow-icon{
+    position: relative;
+    top:25%;
+  }
+
+  
+  #signUp-Section{
+    background-color: #F2F4F7;
+    height: 100%;;
+  }
+
+  .form-control{
+    border-radius: 4px 4px 0px 0px;
+opacity: 1;
+height: 54px !important;
+  }
+
+  
+
+
+
+
+.second-signup-heading {
+  font: var(--unnamed-font-style-normal) normal
+    var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
+    var(--unnamed-line-spacing-21) var(--unnamed-font-family-rubik);
+  letter-spacing: var(--unnamed-character-spacing-0);
+  color: var(--unnamed-color-3c3c4399);
+  text-align: left;
+  font-family:  Rubik;
+  letter-spacing: 0px;
+  color: #3c3c4399;
+  opacity: 1;
+  padding-left: 60px;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 16px;
+}
+.country-container {
+  width: 328px;
+  height: 44px;
+}
+
+.signup-btn {
+  background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
+  background: #111C4E 0% 0% no-repeat padding-box;
+  border-radius: 6px;
+  opacity: 1;
+  color: #fff;
+  width: 328px;
+  height: 48px;
+  font-weight: bold;
+  margin-top: -15px;
+  font-size: 16px;
+  
+
+
+}
+::placeholder {
+  letter-spacing: 0px;
+  color: #77797a;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+
+.login-container {
+  font-family:  Rubik;
+  letter-spacing: 0px;
+  color: #3c3c4399;
+  margin-left: 12px;
+  font-family: Rubik;
+  font-weight: bold;
+  font-size: 16px;
+  font-weight: bold;
+  margin-top: 0px;
+}
+
+// input::placeholder{
+//   background-color: #F2F4F7;
+//   }
+  
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+  ::ng-deep .mat-select-underline {
+    display: none;
+  }
+  
+  ::ng-deep .mat-form-field-underline {
+    display: none;
+  }
+  .content-wrapper .mat-form-field-underline {
+    display: none;
+  }
+  
+
+  .form-control{
+    height: 54px !important;
+    margin-top: -20px;
+    background-color: #F2F4F7;
+  }
+
+  .mat{
+    width:91%;
+    position: relative;
+    left: 15px;
+  }
+
+  .select-country{
+    margin-bottom: 20px;
+  }

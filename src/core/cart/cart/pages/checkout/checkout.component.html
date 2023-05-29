@@ -1,0 +1,235 @@
+<section>
+    <div class="row">
+        <div class="col-md-8">
+            <button style="display: none;" mat-raised-button (click)="isLinear = !isLinear" id="toggle-linear">
+                {{!isLinear ? 'Enable linear mode' : 'Disable linear mode'}}
+              </button>
+              <mat-stepper  orientation="vertical" [linear]="isLinear" #stepper>
+            
+          
+
+                <mat-step  state="room" >
+                 
+                  <form class="justify-content-between" >
+              
+                 
+                    <ng-template>
+                    
+                      <h3 class="address-heading">Address Details</h3>
+                      </ng-template
+                    >
+               
+                 
+                    <!-- <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required> -->
+                        <div  matInput class="address ">
+                        
+                            <ng-template matStepLabel>Fill out your address</ng-template>
+                    
+                            <p class="address-text">Select address or add new</p>
+                    
+                            <div class="address-details d-flex justify-content-between">
+                                <div class="right-content">
+                                    <!-- <img src="../../../../../assets/icons/location-logo.svg"> -->
+
+                                    <h3 class="home">Home</h3>
+                                    <p class="address-text">bin Abd Al Malek Ibn Sakinah, Al Mursilat, Hesham, Riya… </p>
+                                </div>
+                                <img src="../../../../../assets/icons/right-color-icon.svg">
+                            </div>
+
+
+                        </div>
+                 
+
+                       
+                   
+                    <div>
+                    </div>
+                  </form>
+                  <div class="btn-container d-flex justify-content-end">
+                    <button class="address-btn" mat-button  matStepperNext>Save and Continue</button>
+
+                </div>
+                </mat-step >
+             
+                <mat-step    [stepControl]="secondFormGroup" state="money" >
+               
+                    <form >
+                  
+                     
+                    <div  matInput class="address ">
+                        <!-- <ng-template matStepperIcon="edit">
+                            <mat-icon>insert_drive_file</mat-icon>
+                          </ng-template> -->
+                        <ng-template matStepLabel>Payment Details</ng-template>
+                       
+                        <p class="address-text">Select payment method to confirm pay order</p>
+                
+                        <div class="address-details d-flex justify-content-between">
+                            <div class="right-content">
+                                <!-- <img src="../../../../../assets/icons/location-logo.svg"> -->
+
+                                <h3 class="home">Payment Method</h3>
+                                <div class="payment-card d-flex">
+                                  
+                                  <img  style="width:50px;height:50px" src="../../../../../assets/pay/visa.svg">
+
+                                  <img  style="width:50px;height:50px" src="../../../../../assets/pay/master.png">
+
+                                    <img  style="width:50px;height:50px" src="../../../../../assets/pay/visa.svg">
+
+                                    <img  style="width:50px;height:50px" src="../../../../../assets/pay/master.png">
+
+
+                                </div>                          
+                              </div>
+                        </div>
+
+
+                    </div>
+                    <div class="btn-container d-flex justify-content-end">
+
+                    </div>
+                    <div>
+                      <!-- <button mat-button matStepperPrevious>Back</button>
+                      <button mat-button matStepperNext>Next</button> -->
+                    </div>
+               
+                  </form>
+                  <button class="address-btn"mat-button  matStepperNext>Save and Continue</button>
+
+                </mat-step>
+             
+          
+                <mat-step state="chat">
+
+                  <form class="justify-content-between" >
+              
+                    
+                    <ng-template    matStepLabel >ِOrder Review</ng-template>
+                 
+                    <!-- <input matInput placeholder="Last name, First name" formControlName="firstCtrl" required> -->
+                        <div  matInput class="address ">
+                        
+                            <ng-template matStepLabel>Fill out your address</ng-template>
+                    
+                            <p class="address-text">Select address or add new</p>
+                    
+                            <div class="address-details d-flex justify-content-between">
+                                <div class="right-content">
+                                    <!-- <img src="../../../../../assets/icons/location-logo.svg"> -->
+
+                                    <h3 class="home">address details</h3>
+                                    <p class="address-text">bin Abd Al Malek Ibn Sakinah, Al Mursilat, Hesham, Riya… </p>
+                                </div>
+                                <img src="../../../../../assets/icons/right-color-icon.svg">
+                            </div>
+
+
+                        </div>
+                 
+
+                       
+                   
+                    <div>
+                    </div>
+                  </form>
+                  <div class="btn-container d-flex justify-content-end">
+
+                </div>
+                <form >
+                  
+                     
+                  <div  matInput class="address ">
+                      <!-- <ng-template matStepperIcon="edit">
+                          <mat-icon>insert_drive_file</mat-icon>
+                        </ng-template> -->
+                      <ng-template matStepLabel>Payment Details</ng-template>
+                     
+                      <!-- <p class="address-text">Select payment method to confirm pay order</p> -->
+              
+                      <div class="address-details d-flex justify-content-between">
+                          <div class="right-content">
+                              <!-- <img src="../../../../../assets/icons/location-logo.svg"> -->
+
+                              <h3 class="home">Payment Details</h3>
+                              <div class="payment-card d-flex">
+                                
+                                <img  style="width:50px;height:50px" src="../../../../../assets/pay/visa.svg">
+
+                                <img  style="width:50px;height:50px" src="../../../../../assets/pay/master.png">
+
+                                  <img  style="width:50px;height:50px" src="../../../../../assets/pay/visa.svg">
+
+                                  <img  style="width:50px;height:50px" src="../../../../../assets/pay/master.png">
+
+
+                              </div>                          
+                            </div>
+                      </div>
+
+
+                  </div>
+                  <div class="btn-container d-flex justify-content-end">
+
+                  </div>
+                  <div>
+                    <!-- <button mat-button matStepperPrevious>Back</button>
+                    <button mat-button matStepperNext>Next</button> -->
+                  </div>
+             
+                </form>
+                <button class="address-btn"mat-button  matStepperNext>Save and Continue</button>
+                </mat-step>
+           
+       
+ 
+        <ng-template matStepperIcon="phone">
+          <mat-icon>call_end</mat-icon>
+        </ng-template>
+        <ng-template matStepperIcon="chat">
+          <mat-icon>forum</mat-icon>
+        </ng-template>
+              </mat-stepper>
+
+        </div>
+
+        <div class="col-md-4">
+<app-summary></app-summary>
+        </div>
+    </div>
+
+
+</section>
+
+  
+
+<mat-stepper>
+  <!-- <mat-step label="Step 1" state="phone">
+    <p>Put down your phones.</p>
+    <div>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Step 2" state="chat">
+    <p>Socialize with each other.</p>
+    <div>
+      <button mat-button matStepperPrevious>Back</button>
+      <button mat-button matStepperNext>Next</button>
+    </div>
+  </mat-step>
+  <mat-step label="Step 3">
+    <p>You're welcome.</p>
+  </mat-step> -->
+
+  <!-- Icon overrides. -->
+  <ng-template matStepperIcon="room">
+    <mat-icon>room</mat-icon>
+  </ng-template>
+  <ng-template matStepperIcon="chat">
+    <mat-icon>money</mat-icon>
+  </ng-template>
+</mat-stepper>
+
+
+  

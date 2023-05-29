@@ -1,0 +1,65 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-2">
+            <!-- <app-account></app-account> -->
+        </div>
+
+        <div class="col-md-12 "  style="direction: rtl !important;" >
+            <h1 class="loyality-heading"  >loyality points </h1>
+
+
+            <div class="loyality-container justify-content-between" style="direction:ltr;">
+                <div class="point-container">
+                    <div class="row all-data">
+                        <!-- <h5 *ngIf="loyality.length==0">0</h5> -->
+                        <div class="col-md-4 col-sm-12 all-data" style="">
+                            <h4 class="total-point">total points<h2 *ngIf="loyality.length==0">0</h2></h4>
+                            <h3 class="point-price"> {{loyality.LoyaltyPoints}} <h2 *ngIf="loyality.length==0">0</h2> </h3>
+                        </div>
+                        <div class="col-md-4 col-sm-12 all-data" style="">
+                            <h4 class="balance-point">Balance</h4>
+                            <h3 class="point-price">{{loyality.LoyaltyValue}} <h2 *ngIf="loyality.length==0">0</h2>  sar </h3>
+                            
+                        </div>
+                        <div class="col-md-4 col-sm-12 all-data" style="" >
+                            <img class="bag-img" src="../../../assets/icons/bag.svg">
+                        </div>  
+                    </div>
+                </div>
+
+                <!-- <div class="redeem-container d-flex justify-content-between">
+                    <p class="redeem-paragraph">
+                        You can use it in the promo code
+                    </p>
+                    <button class="btn reedem-btn" (click)="goToRedeemPoint()">Redeem</button>
+                </div> -->
+            </div>
+
+                <div style="direction: rtl !important;" *ngFor="let lo of loyality.GainPointHistory" class="history-container">
+                    <h1 style="direction: rtl !important;" class="history-heading">history</h1>
+                                <div class="lo-point-value d-flex justify-content-between">
+                                    <div class="right-one d-flex flex-column">
+                                        <h3 class="gain-point-text">gain-point</h3>
+                                        <h1 class="value-price">{{lo.LoyaltyPoints}} point</h1>
+                                        <!-- <p class="point-paragraph">Obtained from a purchase of 200 to order 1223425</p> -->
+                                    </div>
+                                    <h2 style="direction: rtl !important;" class="exp-date"> {{lo.TransactionDate }}</h2>
+                                </div>
+                </div>
+                <div style="direction: rtl !important;" *ngFor="let lo of loyality.ConsumePointHistory"class="history-container">
+                    <h1   style="direction: rtl !important;" class="history-heading">history</h1>
+                    <h3 class="gain-point-text">consume points</h3>
+
+                                <div class="lo-point-value d-flex justify-content-between">
+                                    <div class="right-one d-flex flex-column">
+                                        <h1 class="value-price red-points">{{lo.LoyaltyPoints}} point</h1>
+                                        <!-- <p class="point-paragraph">Obtained from a purchase of 200 to order 1223425</p> -->
+                                    </div>
+                                    <h2 style="direction: rtl !important;" class="exp-date">  {{lo.TransactionDate }}</h2>
+                                </div>
+                </div>
+        </div>
+
+    </div>
+  
+</div>

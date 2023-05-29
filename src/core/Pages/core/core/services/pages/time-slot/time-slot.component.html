@@ -1,0 +1,35 @@
+<section id="time-slot">
+    <div class="container">
+        <div class="row">
+       <div class="col-md-12">
+        <div class="employee-container">
+            <h2 class="select-empployee" style="direction:rtl">أختار موظف</h2>
+            <select class="form-select" style="direction:rtl" aria-label="Default select example">
+                <option selected>أختر موظف</option>
+                <option value="1" *ngFor="let employee of  emp ">{{employee.NameEn}}</option>
+           
+              </select>
+
+
+        </div>
+
+        <div class="slot-container">
+            <owl-carousel-o [options]="customOptions">
+                <ng-container *ngFor="let d of daysOfYear; let i = index">
+                    <ng-template carouselSlide>
+                
+                    </ng-template>
+                  </ng-container>               
+              </owl-carousel-o>
+
+              
+        </div>
+
+        <div class="time-container">
+
+        </div>
+       </div>
+        </div>
+    </div>
+
+</section>

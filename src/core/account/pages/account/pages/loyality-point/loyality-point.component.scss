@@ -1,0 +1,215 @@
+
+
+body{
+    background-color: #fff !important;
+
+}
+.loyality-container{
+    background-color:  #A53985;
+    border-radius: 14px;
+    opacity: 1;
+    height:220px;
+    padding-top: 30px !important;
+    padding-bottom: 30px !important;
+    margin-bottom: 25px;
+}
+
+.total-point{
+    color:#fff;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 20px;;
+    margin-top:40px;
+
+
+}
+
+.point-price{
+    color:#fff;
+    font-family: poppins;
+    font-weight: bolder;
+    margin-left: 20px;;
+    margin-top: 20px;
+
+
+}
+
+.loyality-heading{
+    direction: ltr;
+    color: #1B1D1F;
+    font-weight: bold;
+    font-size: 24px;
+    margin-top: 40px;
+    margin-left: 10px;
+}
+
+.balance-point{
+    color:#fff;
+    font-family: poppins;
+    font-size: 14px;
+    font-weight: bolder;
+    margin-left: 20px;;
+    margin-top:40px;
+
+}
+.bag-img{
+    margin-top: 33px;
+    margin-left: 20px;;
+}
+
+
+.redeem-container{
+    background-color:#111C4E;
+    border-radius:14px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+
+.redeem-paragraph{
+    color:#fff;
+letter-spacing: 0px;
+opacity: 1;
+    font-size: 14px;;
+    margin-left: 20px;;
+    margin-top: 29px;
+
+}
+
+.reedem-btn{
+    color: #fff;
+    background-color: #111C4E;
+    border: 1px solid #FFFFFF;
+border-radius: 6px;
+font-weight: bolder;
+
+opacity: 1;
+margin-right: 20px;
+margin-bottom: 15px;
+}
+}
+
+.history-container{
+    background-color: #F5F6F9;
+    border-radius: 10px;
+    margin-bottom: 28px;
+    margin-top: 20px !important;
+    padding: 25px;
+
+.history-heading{
+    color:#000000;
+    font-size: 16px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+
+.history-price{
+    color:#34C759;
+    font-size: 20px;;
+    margin-left: 16px;
+}
+
+.history-paragraph{
+    color:#202830;
+    font-size: 13px;
+    margin-left: 16px;
+}
+
+.history-date{
+    color:#4D557A;
+    font-size: 13px;
+    margin-right: 20px;
+    margin-top: 12px;
+
+}
+
+}
+
+hr{
+    color:#9392e4;
+    border-bottom: 1px solid;
+}
+
+.red-points{
+    color:red !important;
+    // font-size: 20px;;
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.redeem-container{
+    background-color: #4D557A;
+}
+
+.history-container,.history-heading{
+    margin-top: 60px;
+}
+
+
+.value-price{
+
+text-align: left;
+font-weight: bold;
+font-family:  poppins;
+color: #34C759;
+opacity: 1;
+font-size: 16px;
+}
+
+.exp-date{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 10px/32px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: right;
+font: normal normal normal 10px/32px Rubik;
+letter-spacing: 0px;
+color: #202830;
+opacity: 0.5;
+font-size: 14px;
+}
+
+.point-paragraph{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-12)/var(--unnamed-line-spacing-14) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+text-align: left;
+font: normal normal normal 12px/14px Rubik;
+letter-spacing: 0px;
+color: #202830;
+opacity: 0.5;
+}
+@media (max-width: 767.98px) { .loyality-container{
+    height: 410px;
+    margin-bottom: 20px;;
+
+} 
+.loyality-container,.all-data{
+    display: flex;
+    justify-content: center !important;
+    align-items: center;
+    flex-direction: column;
+}
+
+}
+
+
+.reedem-btn{
+    background-color: #992e79 !important;
+    border:1px solid #992e79 !important ;
+
+}
+
+.gain-point-text,.consume-point-text{
+    font-family: poppins;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.history-container{
+    position: relative;
+}
+
+.ltr-history-heading{
+    position: absolute;
+    top:-55px;
+    left: 5px;
+
+}

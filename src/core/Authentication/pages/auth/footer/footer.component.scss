@@ -1,0 +1,57 @@
+footer{
+    background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
+background: #111C4E 0% 0% no-repeat padding-box;
+opacity: 1;
+height: auto;
+padding:50px;
+
+h3,h4,.contact-head{
+    color: #fff;
+}
+
+.vl{
+    border-left:1px solid #fff ;
+    padding:10px;
+    margin-top: 30px;
+}
+.secondary-logo-container{
+    margin-left: 0px;
+    position: relative;
+    left: 15px;
+    margin-top: 45px;
+
+}
+
+.seconadry-logp-head{
+    margin-left: 25px;
+    margin-top: 20px;
+}
+.app-store{
+    height:52px;
+    margin-top: 7px;
+}
+
+a{
+    font: var(--unnamed-font-style-normal) normal 300 var(--unnamed-font-size-16)/19px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-f6f9ff);
+text-align: left;
+font: normal normal 300 16px/19px Rubik;
+letter-spacing: 0px;
+color: #F6F9FF;
+text-transform: capitalize;
+opacity: 1;
+text-decoration: none;
+margin-bottom:12px ;
+margin-top:20px ;
+
+}
+
+li{
+    margin-bottom: 25px;;
+}
+
+.contact-paragraph{
+    margin-top: 20px;
+}
+}

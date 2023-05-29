@@ -1,0 +1,131 @@
+.main-heading{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 74px/87px SignPainter;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+text-align: left;
+font-family: SignPainter;
+letter-spacing: 0px;
+color: #333333;
+text-transform: capitalize;
+opacity: 1;
+font-size: 74px;
+}
+
+.at{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 27px/31px SignPainter;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+text-align: left;
+font-family: SignPainter;
+letter-spacing: 0px;
+color: #333333;
+opacity: 1;
+font-size: 27px;
+}
+
+.salon{
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) 38px/46px var(--unnamed-font-family-arima-madurai);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+text-align: left;
+font: normal normal normal 38px/46px Arima Madurai;
+letter-spacing: 0px;
+color: #333333;
+text-transform: capitalize;
+opacity: 1;
+}
+
+.type{
+    /* UI Properties */
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) var(--unnamed-font-size-28)/var(--unnamed-line-spacing-16) var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-000000);
+text-align: left;
+font-family:  Rubik;
+font-weight: bold;
+font-size: 28px;
+letter-spacing: 0px;
+color: #000000;
+opacity: 1;
+}
+
+
+.img-one{
+    background: transparent 0% 0% no-repeat padding-box;
+border-radius: 8px;
+opacity: 1;
+width: 150px;
+height:120px;
+margin-left: 10px;
+margin-top: 20px;
+display: inline-block;
+margin: 0 0.5rem;
+
+animation: bounce; /* referring directly to the animation's @keyframe declaration */
+animation-duration: 2s
+}
+
+@media(max-width:600px){
+    .img-one{
+        background: transparent 0% 0% no-repeat padding-box;
+    border-radius: 8px;
+    opacity: 1;
+    width: 90px;
+    height:120px;
+    margin-left: 10px;
+    margin-top: 20px;
+    display: inline-block;
+    margin: 0 0.5rem;
+    
+    animation: bounce; /* referring directly to the animation's @keyframe declaration */
+    animation-duration: 2s
+    }
+}
+
+.woamn-p{
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal 300 var(--unnamed-font-size-17)/27px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-333333);
+text-align: center;
+font-family: Rubik;
+letter-spacing: 0px;
+color: #333333;
+text-transform: capitalize;
+opacity: 1;
+margin-top: 10px;
+}
+
+.main-photo-paragraph{
+    text-align: center;
+    font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-normal) var(--unnamed-font-size-13)/15px var(--unnamed-font-family-rubik);
+letter-spacing: var(--unnamed-character-spacing-0);
+font-family: Rubik;
+letter-spacing: 0px;
+color: #77797A;
+margin-top: 10px;
+opacity: 1;
+}
+
+
+
+#All-one{
+    background: var(--unnamed-color-000000) 0% 0% no-repeat padding-box;
+background: #000000 0% 0% no-repeat padding-box;
+opacity: 1;
+backdrop-filter: blur(16px);
+-webkit-backdrop-filter: blur(16px);
+// background-color: gray;
+}
+
+#man-woman-card{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+background: #FFFFFF 0% 0% no-repeat padding-box;
+box-shadow: 0px 3px 6px #00000029;
+opacity: 1;
+}
+
+.upper-content-ones{
+    margin-top: 15px;
+    margin-bottom: 12px;
+}

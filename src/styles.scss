@@ -1,0 +1,118 @@
+/* You can add global styles to this file, and also import other style files */
+
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
+@import url('https://fonts.cdnfonts.com/css/signpainter');
+body {
+}
+body {
+  margin: 0;
+  font-family:Poppins ;
+  // background-color: #fff;
+  background-color: #F5F6F9;
+}
+
+body {
+  overflow-x: hidden;
+
+}
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
+@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+.iti .iti--allow-dropdown{
+  width:100% !important;
+}
+html, body { height: 100%; ; 
+}
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+.mat-step-icon-content{
+  // display: none !important;
+}
+
+.mat-vertical-stepper-header .mat-step-icon {
+  margin-right: 12px;
+  background-color: #111C4E !important;
+  color:#fff
+  
+}
+
+.mat-stepper-vertical-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-left-width: 1px;
+  border-left-style: solid;
+  background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
+background: #111C4E 0% 0% no-repeat padding-box !important;
+border-radius: 50px !important;
+opacity: 1;
+
+}
+
+.mat-stepper-vertical-line::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  border-left-width: 4px !important;
+
+  border-left-style: solid;
+  border-color: #111C4E  !important;
+  
+}
+
+.mat-mdc-form-field .mdc-text-field__input{
+  border-radius: 4px 4px 0px 0px !important;
+opacity: 1 !important;
+}
+
+.mat-mdc-form-field {
+  --mat-mdc-form-field-floating-label-scale: 0.75;
+  display: inline-flex;
+  flex-direction: column;
+  min-width: 0;
+  text-align: left;
+  width: 100% !important;
+  border-radius: 4px 4px 0px 0px !important;
+opacity: 1 !important;
+}
+
+// input::placeholder{
+// background-color: #F2F4F7;
+// }
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+::ng-deep .mat-select-underline {
+  display: none;
+}
+
+::ng-deep .mat-form-field-underline {
+  display: none;
+}
+.content-wrapper .mat-form-field-underline {
+  display: none;
+}
+
+.mdc-text-field--outlined .mdc-notched-outline {
+  z-index: 1;
+  background: #F2F4F7;
+  z-index: -100 !important;
+  color: gray;
+  /* background: gray; */
+  padding: 0 !important;
+}
+.mdc-text-field--outlined .mdc-notched-outline {
+  z-index: 1;
+  height: 54px !important;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }

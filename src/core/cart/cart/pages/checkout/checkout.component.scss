@@ -1,0 +1,173 @@
+
+.mat-stepper-vertical {
+    margin-top: 8px;
+  }
+  
+  .mat-mdc-form-field {
+    margin-top: 16px;
+  }
+  
+
+  .address-details{
+    border: 1px solid var(--unnamed-color-111c4e);
+background: #FFFFFF00 0% 0% no-repeat padding-box;
+border: 1px solid #111C4E;
+border-radius: 8px;
+opacity: 1;
+padding: 20px;
+  }
+
+  .address-btn{
+    background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
+background: #111C4E 0% 0% no-repeat padding-box;
+border-radius: 8px;
+opacity: 1;
+font: var(--unnamed-font-style-normal) normal var(--unnamed-font-weight-medium) 14px/var(--unnamed-line-spacing-21) Poppins;
+letter-spacing: var(--unnamed-character-spacing-0);
+color: var(--unnamed-color-ffffff);
+text-align: center;
+font-family:  Poppins;
+font-weight: bold;
+letter-spacing: 0px;
+color: #FFFFFF;
+opacity: 1;
+padding:10px 20px 10px 20px;
+margin-top: 20px;
+  }
+
+  .mat-step-icon-content{
+
+  }
+
+   mat-step-header.mat-horizontal-stepper-header > div.mat-step-icon-selected {
+    background-color:'red';
+}
+
+mat-horizontal-stepper .mat-horizontal-stepper-header-container .mat-step-icon {
+    background-color: "red" !important;
+    
+}
+
+
+
+
+
+
+/**********************/
+body{
+  overflow: hidden;
+}
+
+.address-list::after{
+  border-radius: 5px solid black;
+}
+
+img{
+  position: relative;
+}
+
+button{
+  margin-top: 20px;
+  margin-left: 20px;
+  cursor:  pointer !important;
+}
+
+.address-container{
+  border:2px solid #D0D5DE;
+  border-radius: 10px;
+  padding:20px;
+}
+
+.address-heading{
+  color: #000000;
+text-transform: uppercase;
+opacity: 1;
+font-size: 19px;
+margin-left: 90px;
+position: relative;
+top:-25px;
+}
+
+.select-X{
+  font-size:14px;
+
+}
+
+.home-icon{
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.address-detaols{
+  margin-left: 15px;
+}
+/*********************************************progressBar************************/
+
+.continue-btn {
+  background-color: #111C4E;
+  color:#fff;
+  
+  padding:12px 15px;
+  border-radius: 10px;
+  
+
+}
+
+.add-btn{
+  color:#111C4E;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.visa-details{
+  color:#000000;
+  font-size: 17px;
+  margin-left: 0px;
+}
+
+.address-container{
+  margin-bottom: 12px;
+}
+
+.order-price{
+  font-size: 18px;
+  margin-left: 10px;
+  margin-top:4px;
+
+}
+
+.active{
+  border: 2px solid #111C4E;
+
+}
+
+.stepper-container{
+  margin-top: 22px;
+  border-radius: 20px;
+  // margin-right: 80px;
+  background-color: green($color: #000000) !important;
+}
+
+.mat-step{
+  padding-top:20px;
+}
+
+// .summary-card{
+//     margin-right: 72px;
+//     padding-bottom: 40px;
+// }
+
+img{
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+@media (max-width: 575.98px) { .payment-img{
+  margin-top: 20px;
+}
+.payment-container{
+  display: flex;
+  justify-content: center;
+}
+
+}
