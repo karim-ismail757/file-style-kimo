@@ -2,18 +2,18 @@
 <section class="section" id="">
   <div class="row">
     <div class="col-md-8">
-<div class="cart-content">
-    <div class="main-content d-flex justify-content-between">
+<div class="cart-content" >
+    <div class="main-content d-flex justify-content-between" *ngFor="let cart of cart?.Booking?.Services">
     
-     <div class="inner-right d-flex ">
+     <div class="inner-right d-flex " >
                 <img  style=" width:100px;height:100px"src="../../../../../assets/hand.png">
                 <div class="up-inner flex-column">
-                    <h2 class="product-heading">facial message</h2>
+                    <h2 class="product-heading">{{cart?.Name}}</h2>
                              <div class="d-flex">
                                  <div class="right-icons d-flex">
                                      <img src="../../../../../assets/icons/clock.svg">
                                      <span>
-                                         4.30pm
+                                         {{totalTime   }}pm
                                      </span>
                                  </div>
                                  <div class="left-icons d-flex">
@@ -28,7 +28,7 @@
             
         </div>
         <div class="left-main-content justify-content-start">
-            <h3>200 SAR</h3>
+            <h3>{{totalPrice}} SAR</h3>
             <img src="../../../../../assets/icons/trash.svg"/>
 
         </div>
@@ -36,7 +36,7 @@
    
     
 </div>
-<div class="cart-content">
+<!-- <div class="cart-content">
     <div class="main-content d-flex justify-content-between">
     
      <div class="inner-right d-flex ">
@@ -103,7 +103,7 @@
      </div>
    
     
-</div>
+</div> -->
     </div>
     <div class="col-md-4">
 <app-payment-info></app-payment-info>

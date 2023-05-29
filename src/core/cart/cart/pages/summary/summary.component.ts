@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Route, Router } from '@angular/router';
 
 @Component({
   selector: 'app-summary',
@@ -6,5 +7,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./summary.component.scss']
 })
 export class SummaryComponent {
+
+  constructor(private router :Router){
+
+  }
 
 }

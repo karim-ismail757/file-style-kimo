@@ -47,4 +47,8 @@ return  this.http.post('https://api-stage.glamera.com/api/Category/GlameraCatego
    
     return this.http.post(`${this.apiUrl}v2/BookingService/GetEmployeeTimeSlots`,data,this.getHeaders())
   }
+
+  getServicesToCart():Observable<any>{
+  return this.http.get('https://api-stage.glamera.com/api/ShoppingCart',this.getHeaders())
+  }
 }
