@@ -9,6 +9,8 @@ import { Observable } from 'rxjs';
 })
 export class ProviderServicesService {
   
+  apiUrl=environment.apiUrl;
+  
 
 
   constructor(private http:HttpClient) { }
@@ -35,18 +37,14 @@ return  this.http.post('https://api-stage.glamera.com/api/Category/GlameraCatego
 
   }
 
-  GetTimeSlots(body:any): Observable<any> {
-    return this.http.post(
-      'v2/BookingService/GetEmployeeTimeSlots',
-      body
-    );
-  }
+
 
   getEmployee(data:any){
    return this.http.post(`${environment.apiUrl}Employee/GetBasic`,data,this.getHeaders())
   }
 
   getTimeSlot(data:any){
-    return this.http.post(`${environment.apiUrl}v2/BookingService/GetEmployeeTimeSlots`,data)
+   
+    return this.http.post(`${this.apiUrl}v2/BookingService/GetEmployeeTimeSlots`,data,this.getHeaders())
   }
 }

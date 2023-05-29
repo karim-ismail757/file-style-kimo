@@ -385,3 +385,36 @@ opacity: 1;
     position: relative;
     left: 9px;
 }
+
+.btn-cart{
+    background: var(--unnamed-color-ffffff) 0% 0% no-repeat padding-box;
+border: 1px solid var(--unnamed-color-596d79);
+background: #FFFFFF 0% 0% no-repeat padding-box;
+border: 1px solid #596D79;
+border-radius: 8px;
+opacity: 1;
+height: 48px;
+padding:0px 50x 0px 50px;
+text-align: center;
+font-weight: bold;
+font-family: Rubik;
+font-size: 18px;
+}
+
+.total{
+    font-weight: bold;
+    font-size: 18px;
+    position: relative;
+    top:-13px;
+    font-family: Rubik;   
+
+
+}
+
+.total-vlaue{
+    font-weight: bold;
+    font-size: 15px;
+    font-family: Rubik; 
+    position: relative;
+    top:-10px;  
+}

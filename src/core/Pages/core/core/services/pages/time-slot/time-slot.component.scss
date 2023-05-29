@@ -1,0 +1,44 @@
+.date-h{
+    text-align: center;
+    border: 1px solid #ddd!important;
+    padding: 3px;
+    color: #777;
+    border-radius: 4px;
+    outline: none;
+    margin-bottom: 5px;
+    display: block;
+   
+    box-shadow: none;
+    font-weight: bold;
+    font-family: Rubik;
+    margin-top: 20px;
+    font-size: 20px;
+}
+
+.time-slot-heading{
+    margin-top: 30px;
+}
+
+.continue-container,.btn-continue{
+    color: #fff;
+    background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
+background: #111C4E 0% 0% no-repeat padding-box;
+border-radius: 10px;
+opacity: 1;
+margin-top: 30px;
+margin-bottom: 25px;
+font-size: 30px;
+font-family: Rubik;
+width:50%;
+}
+
+*{
+    font-family: Rubik;
+    font-weight: bold;
+}
+
+.time-slot-heading{
+    font-size: 22px;
+    font-family: Rubik;
+    font-weight: bold;
+}
