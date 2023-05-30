@@ -5,12 +5,12 @@ import { MatSelectCountryModule } from '@angular-material-extensions/select-coun
 import { CarouselModule } from 'ngx-owl-carousel-o';
 import { CarouselComponent } from './components/carousel/carousel.component';
 
-const COMPONENTS = [CountryComponent];
+const COMPONENTS = [CountryComponent, CarouselComponent];
 
 const MATERIAL_MODULES = [MatSelectCountryModule, CarouselModule];
 
 @NgModule({
-  declarations: [...COMPONENTS, CarouselComponent],
+  declarations: [...COMPONENTS],
   imports: [CommonModule, ...MATERIAL_MODULES],
   exports: [...MATERIAL_MODULES, ...COMPONENTS],
 })

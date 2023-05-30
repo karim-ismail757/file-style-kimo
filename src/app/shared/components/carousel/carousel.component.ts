@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Output } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 
 @Component({
@@ -7,6 +7,7 @@ import { OwlOptions } from 'ngx-owl-carousel-o';
   styleUrls: ['./carousel.component.scss'],
 })
 export class CarouselComponent {
+  //carousel configs
   customOptions: OwlOptions = {
     loop: true,
     mouseDrag: false,
@@ -31,4 +32,11 @@ export class CarouselComponent {
     },
     nav: true,
   };
+
+  @Output() itemClicked = new EventEmitter<string>();
+
+  onSlideClick(data: string): void {
+    console.log('hello !');
+    this.itemClicked.emit(data);
+  }
 }
