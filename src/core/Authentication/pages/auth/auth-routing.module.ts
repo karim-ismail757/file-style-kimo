@@ -9,27 +9,14 @@ import { NavAuthComponent } from './nav-auth/nav-auth.component';
 import { AuthGuardService } from './auth-services/authguard.service';
 
 const routes: Routes = [
- 
- { path: 'login', component: LoginComponent },
-  { path: 'signUp', component:SignUpComponent },
-  { path: 'authnav', component: NavAuthComponent},
-  { path: 'verification', component: VerificationPageComponent
- },
- { path: 'home', component: HeaderComponent
- , canActivate: [AuthGuardService]
+  { path: 'login', component: LoginComponent },
+  { path: 'authnav', component: NavAuthComponent },
+  { path: 'verification', component: VerificationPageComponent },
+  { path: 'home', component: HeaderComponent, canActivate: [AuthGuardService] },
 
+  { path: 'signUp', component: SignUpComponent },
 
-},
-
-
-
-{ path: '', component: HeaderComponent,  },
-
-{ path: 'footer', component: FooterComponent
-},
-
-
-
+  { path: 'footer', component: FooterComponent },
 ];
 
 @NgModule({
