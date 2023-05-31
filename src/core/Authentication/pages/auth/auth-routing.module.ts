@@ -15,7 +15,8 @@ const routes: Routes = [
   { path: 'authnav', component: NavAuthComponent},
   { path: 'verification', component: VerificationPageComponent
  },
- { path: 'home', component: HeaderComponent,
+ { path: 'home', component: HeaderComponent
+ , canActivate: [AuthGuardService]
 
 
 },

@@ -9,10 +9,10 @@ import { CartModule } from 'src/core/cart/cart/cart.module';
 
 const routes: Routes = [
   {path:'',component:LoginComponent},
-  { path: 'auth', loadChildren: () => import('src/core/Authentication/pages/auth/auth.module').then(m => m.AuthModule), canActivate: [AuthGuardService]},
-  { path: 'core', loadChildren: () => import('src/core/Pages/core/core.module').then(m => m.CoreModule) , canActivate: [AuthGuardService]},
-  { path: 'account', loadChildren: () => import('src/core/account/account.module').then(m => m.AccountModule) , canActivate: [AuthGuardService] },
-  { path: 'cart', loadChildren: () => import('src/core/cart/cart/cart.module').then(m => m.CartModule)  , canActivate: [AuthGuardService]},
+  { path: 'auth', loadChildren: () => import('src/core/Authentication/pages/auth/auth.module').then(m => m.AuthModule)},
+  { path: 'core', loadChildren: () => import('src/core/Pages/core/core.module').then(m => m.CoreModule) },
+  { path: 'account', loadChildren: () => import('src/core/account/account.module').then(m => m.AccountModule)  },
+  { path: 'cart', loadChildren: () => import('src/core/cart/cart/cart.module').then(m => m.CartModule)  },
 
 
 
