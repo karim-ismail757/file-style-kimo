@@ -1,65 +1,48 @@
 <section>
-    <div class="row">
-        <div class="col-md-12">
-            <div class="summary-container">
-                <h1 class="summary-heading"> Summary</h1>
-                <div class="summary-data">
-                    <div class="price d-flex justify-content-between">
-                        <p class="price-text">
-                            Price
-                        </p>
-    
-                        <span class=" price-value">500 SAR</span>
-                      </div>
-                      <div class="price d-flex justify-content-between">
-                        <p class="price-text">
-                           Tax (5%)
-                        </p>
-    
-                        <span class=" price-value"> 10 SAR</span>
-                      </div>
-                      <div class="price d-flex justify-content-between">
-                        <p class="price-text">
-                           Promo Code
-                        </p>
-    
-                        <span class=" price-value">-20 SAR</span>
-                      </div>
-                      <hr/>
-                      <div class="price d-flex justify-content-between">
-                        <p class=" total-text">
-                         Total
-                        </p>
-    
-                        <span class="  total-value">1000 SAR</span>
-                      </div>
+  <div class="row">
+    <div class="col-md-12">
+      <div class="summary-container" *ngFor="let c of cart">
+        <h1 class="summary-heading">Summary</h1>
+        <div class="summary-data">
+          <div class="price d-flex justify-content-between">
+            <p class="price-text">Price</p>
 
-                      <div class="cart-item">
-                        <h3 class="in-cart">In Your Cart</h3>
-                        <div class="in-cart-content d-flex ">
-                            <img style="width:40px;height:40px" src="../../../../../assets/hand.png"/>
-                            <h3 class="item-name">Facial Message</h3>
-                        </div>
-                        <div class="in-cart-content d-flex ">
-                            <img style="width:40px;height:40px" src="../../../../../assets/hand.png"/>
-                            <h3 class="item-name">Facial Message</h3>
-                        </div>
-                        <div class="in-cart-content d-flex ">
-                            <img style="width:40px;height:40px" src="../../../../../assets/hand.png"/>
-                            <h3 class="item-name">Facial Message</h3>
-                        </div>
-                        <div class="in-cart-content d-flex ">
-                            <img style="width:40px;height:40px" src="../../../../../assets/hand.png"/>
-                            <h3 class="item-name">Facial Message</h3>
-                        </div>
+            <span class="price-value">500 SAR</span>
+          </div>
+          <div class="price d-flex justify-content-between">
+            <p class="price-text">Tax (5%)</p>
 
-                        <div class="package-service">
-                            <h2 class="package-name-heading">Package Name</h2>
-                            <p class="s-p-text">1 Package - 3 Services</p>
-                        </div>
-                      </div>
-                </div>
+            <span class="price-value"> 10 SAR</span>
+          </div>
+          <div class="price d-flex justify-content-between">
+            <p class="price-text">Promo Code</p>
+
+            <span class="price-value">-20 SAR</span>
+          </div>
+          <hr />
+          <div class="price d-flex justify-content-between">
+            <p class="total-text">Total</p>
+
+            <span class="total-value">1000 SAR</span>
+          </div>
+
+          <div class="cart-item">
+            <h3 class="in-cart">In Your Cart</h3>
+            <div class="in-cart-content d-flex">
+              <img
+                style="width: 40px; height: 40px"
+                src="../../../../../assets/hand.png"
+              />
+              <h3 class="item-name">{{ c?.Booking?.Services?.Name }}</h3>
             </div>
+
+            <div class="package-service">
+              <h2 class="package-name-heading">Package Name</h2>
+              <p class="s-p-text">1 Package - 3 Services</p>
+            </div>
+          </div>
         </div>
+      </div>
     </div>
+  </div>
 </section>

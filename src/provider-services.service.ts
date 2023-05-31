@@ -8,15 +8,18 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProviderServicesService {
-  cartNo!:number;
-  apiUrl=environment.apiUrl;
-  
 
+  cartNo!: number;
+  apiUrl = environment.apiUrl;
 
-  constructor(private http:HttpClient) { }
-  getLoyalityPoints(ClientId:loyality){
-    return this.http.post(`${environment.apiUrl}ClientPointsBalance/GetClientPointsDashboard`,ClientId,this.getHeaders())
-   }
+  constructor(private http: HttpClient) {}
+  getLoyalityPoints(ClientId: loyality) {
+    return this.http.post(
+      `${environment.apiUrl}ClientPointsBalance/GetClientPointsDashboard`,
+      ClientId,
+      this.getHeaders()
+    );
+  }
   getHeadersFinal(): any {
     throw new Error('Method not implemented.');
   }
@@ -25,30 +28,46 @@ export class ProviderServicesService {
     return {
       headers: new HttpHeaders()
         .set('Content-Type', 'application/json')
-        .set('AppId', "105")
-        .set('Authorization', 'Bearer ' + localStorage.getItem("token"))
-        
-
-    }
+        .set('AppId', '105')
+        .set('Authorization', 'Bearer ' + localStorage.getItem('token')),
+    };
   }
 
-  getAllServicesData(data:any): Observable<any>{
-return  this.http.post('https://api-stage.glamera.com/api/Category/GlameraCategoriesAndOffers',data,this.getHeaders())
-
+  getAllServicesData(data: any): Observable<any> {
+    return this.http.post(
+      'https://api-stage.glamera.com/api/Category/GlameraCategoriesAndOffers',
+      data,
+      this.getHeaders()
+    );
   }
 
-
-
-  getEmployee(data:any){
-   return this.http.post(`${environment.apiUrl}Employee/GetBasic`,data,this.getHeaders())
+  getEmployee(data: any) {
+    return this.http.post(
+      `${environment.apiUrl}Employee/GetBasic`,
+      data,
+      this.getHeaders()
+    );
   }
 
-  getTimeSlot(data:any){
-   
-    return this.http.post(`${this.apiUrl}v2/BookingService/GetEmployeeTimeSlots`,data,this.getHeaders())
+  getTimeSlot(data: any) {
+    return this.http.post(
+      `${this.apiUrl}v2/BookingService/GetEmployeeTimeSlots`,
+      data,
+      this.getHeaders()
+    );
   }
 
-  getServicesToCart():Observable<any>{
-  return this.http.get('https://api-stage.glamera.com/api/ShoppingCart',this.getHeaders())
+  getServicesToCart(): Observable<any> {
+    return this.http.get(
+      'https://api-stage.glamera.com/api/ShoppingCart',
+      this.getHeaders()
+    );
+  }
+
+  deleteService(id:number): Observable<any> {
+    return this.http.delete<any>(
+    `https://api-stage.glamera.com/api/ShoppingCart/Service/${id}`,
+      this.getHeaders()
+    );
   }
 }

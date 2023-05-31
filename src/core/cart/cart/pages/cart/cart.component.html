@@ -1,5 +1,5 @@
 
-<section class="section" id="">
+<section class="section" *ngIf="cart" id="">
   <div class="row">
     <div class="col-md-8">
 <div class="cart-content" >
@@ -29,7 +29,7 @@
         </div>
         <div class="left-main-content justify-content-start">
             <h3>{{totalPrice}} SAR</h3>
-            <img src="../../../../../assets/icons/trash.svg"/>
+            <img (click)="deleteService(cart.Id)" src="../../../../../assets/icons/trash.svg"/>
 
         </div>
      </div>

@@ -56,16 +56,10 @@ export class TimeSlotComponent implements OnInit {
       console.log(this.emp, 'heloo');
     });
   }
-  today = new Date();
-  dd = String(this.today.getDate()).padStart(2, '0');
-  mm = String(this.today.getMonth() + 1).padStart(2, '0'); //January is 0!
-  yyyy = this.today.getFullYear();
-
-  todayOne = this.yyyy + '-' + this.mm + '-' + this.dd;
 
   dateHour: any;
   dataslot = {
-    DateFrom: `${this.todayOne}`,
+    DateFrom: '2023-06-03', // this.returnCurrentDate(),
     AccountSetupId: 18937,
     PagingEnabled: false,
     EmployeeId: -1,
@@ -73,7 +67,7 @@ export class TimeSlotComponent implements OnInit {
   };
   timeSlote: any;
   getTimeSlots(data: any) {
-    this.provider.getTimeSlot(this.dataslot).subscribe((res) => {
+    this.provider.getTimeSlot(data).subscribe((res) => {
       console.log(res);
       this.dateHour = res;
       console.log(this.dateHour, 'temsah');
@@ -81,7 +75,18 @@ export class TimeSlotComponent implements OnInit {
   }
 
   onItemClicked(date: string): void {
-    console.log(date);
+    this.dataslot = { ...this.dataslot, DateFrom: date };
+    this.getTimeSlots(this.dataslot);
+  }
+
+  returnCurrentDate(): string {
+    const today = new Date();
+    const dd = String(today.getDate()).padStart(2, '0');
+    const mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+    const yyyy = today.getFullYear();
+
+    const todayOne = yyyy + '-' + mm + '-' + dd;
+    return todayOne;
   }
 
   getCurrentMonthDays(): CurrentObjectDate {

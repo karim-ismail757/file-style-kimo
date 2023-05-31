@@ -35,7 +35,7 @@
                  
                     <div class="d-flex main-nav-form ul-right-nav" role="search">
                         <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
-                          <span class="cart-no" >{{cartNo}}</span>
+                          <span *ngIf="cartNo" class="cart-no" >{{cartNo}}</span>
 
                           <li class="nav-item first-item " style="position: relative;">
 

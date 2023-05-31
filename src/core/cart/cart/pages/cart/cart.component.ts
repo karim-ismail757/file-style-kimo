@@ -16,20 +16,24 @@ export class CartComponent implements OnInit {
   cart: any = [];
   constructor(private provider: ProviderServicesService) {}
 
-
-
-  getCartData(){
-    this.provider.getServicesToCart().subscribe((response)=>{
-      this.cart=response.Result;
+  getCartData() {
+    this.provider.getServicesToCart().subscribe((response) => {
+      this.cart = response.Result;
       debugger;
-      this.totalPrice=response?.Result?.TotalPrice;
-      this.totalTime=response?.Result?.Booking?.Time;
-      this.provider.cartNo=response?.Result?.Booking?.Services?.length;
-
-    })
+      this.totalPrice = response?.Result?.TotalPrice;
+      this.totalTime = response?.Result?.Booking?.Time;
+      this.provider.cartNo = response?.Result?.Booking?.Services?.length;
+    });
   }
 
+  deleteService(id:number) {
+    this.provider.deleteService(id).subscribe((res) => {
+      this.updateCartData(res.Result);
+    });
+  }
 
-
-
+  updateCartData(data: any) {
+    this.cart = data;
+    this.provider.cartNo = data;
+  }
 }

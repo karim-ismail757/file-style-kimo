@@ -48,9 +48,13 @@ export class CarouselComponent {
     const date: string =
       this.data.year +
       '-' +
-      this.data.month.number +
+      (this.data.month.number < 10
+        ? '0' + this.data.month.number
+        : this.data.month.number) +
       '-' +
-      this.data.days[index].number;
+      (this.data.days[index].number < 10
+        ? '0' + this.data.days[index].number
+        : this.data.days[index].number);
     this.itemClicked.emit(date);
   }
 }
