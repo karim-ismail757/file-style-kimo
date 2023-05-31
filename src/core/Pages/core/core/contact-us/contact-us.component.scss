@@ -129,3 +129,10 @@ background: #FFFFFF 0% 0% no-repeat padding-box;
 opacity: 1;
 height: 100%;
  }
+
+ @media(max-width:600px){
+    .form-floating{
+        position: relative;
+        left: -24px;
+    }
+ }

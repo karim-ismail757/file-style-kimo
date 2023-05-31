@@ -425,3 +425,15 @@ font-size: 18px;
 *{
     font-family: Rubik !important;
 }
+
+@media(width:1024px){
+    .m-star{
+        display: none !important; 
+    }
+}
+
+@media(max-width:600px){
+    .m-star{
+        display: none !important; 
+    }
+}
