@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProviderServicesService {
-  
+  cartNo!:number;
   apiUrl=environment.apiUrl;
   
 

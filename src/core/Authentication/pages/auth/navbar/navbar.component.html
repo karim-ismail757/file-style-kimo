@@ -4,7 +4,9 @@
         <div class="col-md-12">
             <nav class="navbar  navbar-expand-lg bg-body-tertiary">
                 <div class="container-fluid">
-              <a class="navbar-brand" href="#"><img class="site-logo"src="../../../../assets/site-logo.png"></a>
+              <a class="navbar-brand"  aria-current="page" 
+              href="/core/home"
+            ><img class="site-logo"src="../../../../assets/site-logo.png"></a>
                   <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                   </button>
@@ -16,7 +18,7 @@
                                   <a class="nav-link " routerLinkAcrive="active" aria-current="page"routerLink="/core/service">Services</a>
                                 </li>
                                 <li class="nav-item second-item">
-                                  <a class="nav-link"routerLinkAcrive="active"  routerLink="/core/giftCard">Gift Cards</a>
+                                  <a class="nav-link"routerLinkAcrive="active"  routerLink="/account/wallet">Gift Cards</a>
                                 </li>
                                 <li class="nav-item third-item">
                                     <a class="nav-link" routerLinkAcrive="active"  routerLink="/core/about-us">About Us</a>
@@ -33,13 +35,22 @@
                  
                     <div class="d-flex main-nav-form ul-right-nav" role="search">
                         <ul class="navbar-nav  me-auto mb-2 mb-lg-0 ">
+                          <span class="cart-no" >{{cartNo}}</span>
 
-                        
+                          <li class="nav-item first-item " style="position: relative;">
+
+
+
+                            <a class="nav-link cart-item language active" aria-current="page" routerLink="/cart/cart">
+
+                              <img src="../../../../../assets/icons/cart-iconss.svg"> view Cart</a>
+                          </li>
                             <li class="nav-item first-item">
-                              <a class="nav-link language active" aria-current="page" href="#">العربيه</a>
+                              <a class="nav-link language " aria-current="page" href="#">العربيه</a>
                             </li>
                             <li class="nav-item second-item">
-                              <a class="nav-link" href="#"><img class="man-login"src="../../../../assets/man.svg"> profile</a>
+                              <a class="nav-link" routerLinkActive="" aria-current="page" 
+                              routerLink="/account/my-booking" ><img class="man-login"src="../../../../assets/man.svg"> profile</a>
                             </li>
                          
                  

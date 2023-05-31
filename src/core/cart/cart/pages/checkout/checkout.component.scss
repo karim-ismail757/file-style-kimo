@@ -76,7 +76,9 @@ button{
   border:2px solid #D0D5DE;
   border-radius: 10px;
   padding:20px;
+  margin-bottom: 20px;
 }
+
 
 .address-heading{
   color: #000000;
@@ -161,6 +163,9 @@ img{
   background-color: #fff;
   border-radius: 10px;
 }
+.address{
+  margin-bottom: 25px;
+}
 
 @media (max-width: 575.98px) { .payment-img{
   margin-top: 20px;
@@ -171,3 +176,5 @@ img{
 }
 
 }
+
+

@@ -22,6 +22,8 @@ h3,h4,.contact-head{
 
 }
 
+
+
 .seconadry-logp-head{
     margin-left: 25px;
     margin-top: 20px;
@@ -54,4 +56,39 @@ li{
 .contact-paragraph{
     margin-top: 20px;
 }
+.download-iphone-android{
+    display: flex;
 }
+}
+
+
+@media (max-width: 575.98px) { 
+    .download-iphone-android{
+        display:flex;
+        flex-direction: column;
+    }
+}
+
+// Small devices (landscape phones, less than 768px)
+@media (max-width: 767.98px) { 
+    .download-iphone-android{
+        display:flex;
+        flex-direction: column;
+    }
+ }
+
+// Medium devices (tablets, less than 992px)
+@media (max-width: 991.98px) { 
+    .download-iphone-android{
+        display:flex;
+        flex-direction: column;
+    }
+ }
+
+ @media (max-width: 1199.98px) { 
+    .download-iphone-android{
+        display:flex;
+        flex-direction: column;
+    }
+
+ }

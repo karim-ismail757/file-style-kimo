@@ -224,4 +224,31 @@ font-size: 18px;
   padding-bottom: 30px;
   height: 650px;
   }
+
+  @media (max-width: 575.98px) { 
+
+    .SignUp{
+      width:90%;
+    }
+    .country{
+      width: 90% !important;
+    }
+    .signup{
+      display: flex;
+      justify-content: center;
+    }
+    .btn-sumbit{
+      display: flex;
+      justify-content: center;
+    }
+    .X-mat {
+
+      position: relative;
+      right: -16px;
+    }
+   }
+
+   .horizontal-divider{
+    width: 80% !important;
+   }
  }

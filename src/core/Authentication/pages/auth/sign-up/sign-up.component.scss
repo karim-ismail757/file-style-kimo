@@ -161,6 +161,11 @@ height: 54px !important;
   text-transform: uppercase;
   font-size: 14px;
 }
+.X-mat {
+
+  position: relative;
+  right: -16px;
+}
 
 .login-container {
   font-family:  Rubik;
@@ -208,3 +213,35 @@ height: 54px !important;
   .select-country{
     margin-bottom: 20px;
   }
+
+  .country{
+    width: 90% !important;
+  }
+  .country{
+    margin-bottom: 8px;
+  }
+  @media (max-width: 575.98px) { 
+
+    input{
+      width:100% !important;
+    }
+    .SignUp,.form-control,.btn{
+      width:90%;
+    }
+    .country{
+      width: 90% !important;
+    }
+    .signup{
+      display: flex;
+      justify-content: center;
+    }
+    .btn-sumbit{
+      display: flex;
+      justify-content: center;
+    }
+    .X-mat {
+
+      position: relative;
+      right: -16px;
+    }
+   }

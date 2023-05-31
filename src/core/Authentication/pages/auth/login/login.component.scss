@@ -153,4 +153,16 @@ margin-bottom: 8px;
   input{
     width:100% !important;
   }
+  .SignUp,.form-control,.btn{
+    width:90%;
+  }
+
+  .signup{
+    display: flex;
+    justify-content: center;
+  }
+  .btn-sumbit{
+    display: flex;
+    justify-content: center;
+  }
  }

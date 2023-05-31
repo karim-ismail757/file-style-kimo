@@ -28,6 +28,8 @@ export class CartComponent implements OnInit {
       debugger;
       this.totalPrice=response?.Result?.TotalPrice;
       this.totalTime=response?.Result?.Booking?.Time;
+      this.provider.cartNo=response?.Result?.Booking?.Services?.length;
+      console.log(this.provider.cartNo,"temsaaaaaaah")
 
     })
   }
