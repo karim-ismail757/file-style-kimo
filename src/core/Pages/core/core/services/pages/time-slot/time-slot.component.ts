@@ -80,8 +80,8 @@ export class TimeSlotComponent implements OnInit {
     });
   }
 
-  onItemClicked(item: string): void {
-    console.log(item);
+  onItemClicked(date: string): void {
+    console.log(date);
   }
 
   getCurrentMonthDays(): CurrentObjectDate {
@@ -123,7 +123,7 @@ export class TimeSlotComponent implements OnInit {
 
     return {
       year: year,
-      month: monthNames[month + 1],
+      month: { name: monthNames[month + 1], number: month + 1 },
       days: days,
     };
   }

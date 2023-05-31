@@ -8,6 +8,6 @@ export class User {
 
 export interface CurrentObjectDate {
   year: number;
-  month: string;
+  month: { name: string; number: number };
   days: { name: string; number: number }[];
 }

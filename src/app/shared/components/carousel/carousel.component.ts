@@ -42,9 +42,15 @@ export class CarouselComponent {
   @Input() data!: CurrentObjectDate;
   activeNumber!: number;
 
-  onSlideClick(data: string, index: number): void {
-    console.log('hello !');
+  onSlideClick(index: number): void {
     this.activeNumber = index;
-    this.itemClicked.emit(data);
+
+    const date: string =
+      this.data.year +
+      '-' +
+      this.data.month.number +
+      '-' +
+      this.data.days[index].number;
+    this.itemClicked.emit(date);
   }
 }
