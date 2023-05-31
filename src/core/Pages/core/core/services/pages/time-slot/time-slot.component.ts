@@ -2,15 +2,15 @@ import { Component } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ProviderServicesService } from 'src/provider-services.service';
 import { OnInit } from '@angular/core';
+import { CurrentObjectDate } from 'src/app/models/user';
 
 @Component({
   selector: 'app-time-slot',
   templateUrl: './time-slot.component.html',
-  styleUrls: ['./time-slot.component.scss']
+  styleUrls: ['./time-slot.component.scss'],
 })
-export class TimeSlotComponent implements OnInit{
-
-  daysOfYear:any;
+export class TimeSlotComponent implements OnInit {
+  daysOfYear: any;
   customOptions: OwlOptions = {
     loop: false,
     mouseDrag: false,
@@ -24,36 +24,21 @@ export class TimeSlotComponent implements OnInit{
       "<i class='fas fa-angle-right'></i>",
       "<i class='fas fa-angle-left'></i>",
     ],
-    // responsive: {
-    //   0: {
-    //     items: 2,
-    //   },
-    //   400: {
-    //     items: 3,
-    //   },
-    //   740: {
-    //     items: 4,
-    //   },
-    //   940: {
-    //     items: 4,
-    //   },
-    // },
 
-
-    
     autoHeight: true,
-    lazyLoad: true
+    lazyLoad: true,
   };
-constructor(private provider:ProviderServicesService){
 
-}
+  currentMonthObj!: CurrentObjectDate;
+
+  constructor(private provider: ProviderServicesService) {}
   ngOnInit(): void {
     this.getEmp(this.data);
     this.getTimeSlots(this.dataslot);
-
-
+    this.currentMonthObj = this.getCurrentMonthDays();
+    console.log('current month => ', this.currentMonthObj);
   }
-  bookingDate:any;
+  bookingDate: any;
   selected: any;
   datepipe: any;
   accountSetupId: any;
@@ -62,40 +47,84 @@ constructor(private provider:ProviderServicesService){
   providerService: any;
   hourSlots: any;
 
+  data: any = { AccountSetupId: 18937, Status: 1 };
+  emp: any = [];
 
-  data:any={AccountSetupId: 18937, Status: 1}
-  emp:any=[];
-
-  getEmp(data:any){
-    this.provider.getEmployee(this.data).subscribe((res:any)=>{
-      this.emp=res.Employees;
-      console.log(this.emp,"heloo");
-      
-
-    })
-
+  getEmp(data: any) {
+    this.provider.getEmployee(this.data).subscribe((res: any) => {
+      this.emp = res.Employees;
+      console.log(this.emp, 'heloo');
+    });
   }
-   today = new Date();
-   dd = String(this.today.getDate()).padStart(2, '0');
-   mm = String(this.today.getMonth() + 1).padStart(2, '0'); //January is 0!
+  today = new Date();
+  dd = String(this.today.getDate()).padStart(2, '0');
+  mm = String(this.today.getMonth() + 1).padStart(2, '0'); //January is 0!
   yyyy = this.today.getFullYear();
-  
-  todayOne = this.yyyy+ '-' + this.mm + '-' +this.dd ;
 
+  todayOne = this.yyyy + '-' + this.mm + '-' + this.dd;
 
-dateHour:any;
-dataslot={DateFrom:`${this.todayOne}`, AccountSetupId: 18937, PagingEnabled: false, EmployeeId: -1, ClientId: 230963}
-timeSlote:any;
-  getTimeSlots(data:any){
-    this.provider.getTimeSlot(this.dataslot).subscribe((res)=>{
+  dateHour: any;
+  dataslot = {
+    DateFrom: `${this.todayOne}`,
+    AccountSetupId: 18937,
+    PagingEnabled: false,
+    EmployeeId: -1,
+    ClientId: 230963,
+  };
+  timeSlote: any;
+  getTimeSlots(data: any) {
+    this.provider.getTimeSlot(this.dataslot).subscribe((res) => {
       console.log(res);
-      this.dateHour=  res;
-      console.log(this.dateHour,"temsah")
+      this.dateHour = res;
+      console.log(this.dateHour, 'temsah');
+    });
+  }
 
-      
-      
+  onItemClicked(item: string): void {
+    console.log(item);
+  }
 
-    })
+  getCurrentMonthDays(): CurrentObjectDate {
+    const days = [];
+    const monthNames = [
+      'January',
+      'February',
+      'March',
+      'April',
+      'May',
+      'June',
+      'July',
+      'August',
+      'September',
+      'October',
+      'November',
+      'December',
+    ];
+
+    const dayNames = [
+      'Sunday',
+      'Monday',
+      'Tuesday',
+      'Wednesday',
+      'Thursday',
+      'Friday',
+      'Saturday',
+    ];
+
+    const currentDate = new Date();
+    const year = currentDate.getFullYear();
+    const month = currentDate.getMonth();
+    const numDays = new Date(year, month + 1, 0).getDate();
+
+    for (let i = 1; i <= numDays; i++) {
+      const date = new Date(year, month, i);
+      days.push({ name: dayNames[date.getDay()], number: i });
+    }
+
+    return {
+      year: year,
+      month: monthNames[month + 1],
+      days: days,
+    };
   }
 }
-

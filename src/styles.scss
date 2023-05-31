@@ -1,47 +1,52 @@
 /* You can add global styles to this file, and also import other style files */
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap");
-@import url('https://fonts.cdnfonts.com/css/signpainter');
+@import url("https://fonts.cdnfonts.com/css/signpainter");
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
 body {
 }
 body {
   margin: 0;
-  font-family:Poppins ;
+  font-family: Poppins;
   // background-color: #fff;
-  background-color: #F5F6F9;
+  background-color: #f5f6f9;
 }
 
 body {
   overflow-x: hidden;
-
 }
 
 /* Importing Bootstrap SCSS file. */
 @import "./node_modules/bootstrap/scss/bootstrap";
 @import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Rubik&display=swap");
 
 /* Importing Datepicker SCSS file. */
 @import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.carousel';
-@import 'ngx-owl-carousel-o/lib/styles/scss/owl.theme.default';
-@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
-.iti .iti--allow-dropdown{
-  width:100% !important;
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.carousel";
+@import "ngx-owl-carousel-o/lib/styles/scss/owl.theme.default";
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+.iti .iti--allow-dropdown {
+  width: 100% !important;
 }
-html, body { height: 100%; ; 
+html,
+body {
+  height: 100%;
 }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}
 
-.mat-step-icon-content{
+.mat-step-icon-content {
   // display: none !important;
 }
 
 .mat-vertical-stepper-header .mat-step-icon {
   margin-right: 12px;
-  background-color: #111C4E !important;
-  color:#fff
-  
+  background-color: #111c4e !important;
+  color: #fff;
 }
 
 .mat-stepper-vertical-line::before {
@@ -51,10 +56,9 @@ body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
   border-left-width: 1px;
   border-left-style: solid;
   background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
-background: #111C4E 0% 0% no-repeat padding-box !important;
-border-radius: 50px !important;
-opacity: 1;
-
+  background: #111c4e 0% 0% no-repeat padding-box !important;
+  border-radius: 50px !important;
+  opacity: 1;
 }
 
 .mat-stepper-vertical-line::before {
@@ -64,13 +68,12 @@ opacity: 1;
   border-left-width: 4px !important;
 
   border-left-style: solid;
-  border-color: #111C4E  !important;
-  
+  border-color: #111c4e !important;
 }
 
-.mat-mdc-form-field .mdc-text-field__input{
+.mat-mdc-form-field .mdc-text-field__input {
   border-radius: 4px 4px 0px 0px !important;
-opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 .mat-mdc-form-field {
@@ -81,7 +84,7 @@ opacity: 1 !important;
   text-align: left;
   width: 100% !important;
   border-radius: 4px 4px 0px 0px !important;
-opacity: 1 !important;
+  opacity: 1 !important;
 }
 
 // input::placeholder{
@@ -104,7 +107,7 @@ opacity: 1 !important;
 
 .mdc-text-field--outlined .mdc-notched-outline {
   z-index: 1;
-  background: #F2F4F7;
+  background: #f2f4f7;
   z-index: -100 !important;
   color: gray;
   /* background: gray; */
@@ -114,5 +117,11 @@ opacity: 1 !important;
   z-index: 1;
   height: 54px !important;
 }
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

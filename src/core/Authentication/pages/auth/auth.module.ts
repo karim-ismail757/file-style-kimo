@@ -5,24 +5,22 @@ import { AuthRoutingModule } from './auth-routing.module';
 import { LoginComponent } from './login/login.component';
 import { SignUpComponent } from './sign-up/sign-up.component';
 import { VerificationPageComponent } from './verification-page/verification-page.component';
-import {MatInputModule} from '@angular/material/input';
+import { MatInputModule } from '@angular/material/input';
 import { FullSignUpComponent } from './full-sign-up/full-sign-up.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
-import {Ng2TelInputModule} from 'ng2-tel-input';
+import { Ng2TelInputModule } from 'ng2-tel-input';
 import { FooterComponent } from './footer/footer.component';
 import { NavAuthComponent } from './nav-auth/nav-auth.component';
-import {HttpClientModule} from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
 import { FormControl, FormGroup } from '@angular/forms';
 import { AuthGuardService } from './auth-services/authguard.service';
 import { MatIcon } from '@angular/material/icon';
 import { MatFormField } from '@angular/material/form-field';
 
-
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
-
-
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -33,24 +31,19 @@ import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
     NavbarComponent,
     HeaderComponent,
     FooterComponent,
-    NavAuthComponent
+    NavAuthComponent,
   ],
   imports: [
     CommonModule,
     AuthRoutingModule,
     MatInputModule,
     Ng2TelInputModule,
-    
     HttpClientModule,
     ReactiveFormsModule,
     HttpClientModule,
-
-     
-
-
-    
+    SharedModule,
   ],
-  exports:[NavbarComponent,HeaderComponent,FooterComponent],
-  providers: [AuthGuardService]
+  exports: [NavbarComponent, HeaderComponent, FooterComponent],
+  providers: [AuthGuardService],
 })
-export class AuthModule { }
+export class AuthModule {}

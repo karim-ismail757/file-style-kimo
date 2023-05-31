@@ -15,45 +15,28 @@ import { ManWomanCardComponent } from './core/services/pages/man-woman-card/man-
 import { TimeSlotComponent } from './core/services/pages/time-slot/time-slot.component';
 
 const routes: Routes = [
-{
-    path:'core', 
+  {
+    path: 'core',
     component: CoreComponent,
     children: [
-      
-{ path: 'contact-us', component: ContactUsComponent },
-{ path: 'about-us', component:AboutUsComponent },
-{ path: 'service', component: ServicesComponent},
-{ path: 's-booking-detail', component: ServiceBookingDetailComponent},
-{ path: 'final-booking', component: FinalBookingComponent},
-{ path: 'gift-card', component: PurchaseGiftCardComponent},
-{ path: 'final-card', component: PurchaseFinalCardComponent},
-{ path: 'redeem', component: PurchaseRedeemComponent},
-{ path: 'like-pay', component: LikePayComponent},
-{ path: 'n-address', component: NewAddressComponent},
-{ path: 'choose-card', component: ManWomanCardComponent},
-{path:'slot',component:TimeSlotComponent}
-
-
-
-
-
-
-
-
-
-
-
-
-
-   
-    ]
+      { path: 'contact-us', component: ContactUsComponent },
+      { path: 'about-us', component: AboutUsComponent },
+      { path: 'service', component: ServicesComponent },
+      { path: 's-booking-detail', component: ServiceBookingDetailComponent },
+      { path: 'final-booking', component: FinalBookingComponent },
+      { path: 'gift-card', component: PurchaseGiftCardComponent },
+      { path: 'final-card', component: PurchaseFinalCardComponent },
+      { path: 'redeem', component: PurchaseRedeemComponent },
+      { path: 'like-pay', component: LikePayComponent },
+      { path: 'n-address', component: NewAddressComponent },
+      { path: 'choose-card', component: ManWomanCardComponent },
+      { path: 'slot', component: TimeSlotComponent },
+    ],
   },
 ];
 
-
-
 @NgModule({
   imports: [RouterModule.forChild(routes)],
-  exports: [RouterModule]
+  exports: [RouterModule],
 })
-export class CoreRoutingModule { }
+export class CoreRoutingModule {}
