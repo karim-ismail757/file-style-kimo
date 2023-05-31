@@ -1,22 +1,14 @@
 <owl-carousel-o [options]="customOptions">
-  <ng-template carouselSlide>
-    <button class="date-btn" (click)="onSlideClick('test')">
-      Slide 1
+  <ng-template carouselSlide *ngFor="let day of data.days; let i = index">
+    <button
+      [ngClass]="{ active: i === activeNumber }"
+      class="date-btn"
+      (click)="onSlideClick('test', i)"
+    >
+      <h3>{{ day.number < 10 ? "0" + day.number : day.number }}</h3>
+      <h3>{{ day.name }}</h3>
+      <h3>{{ data.month }}</h3>
+      <h3>{{ data.year }}</h3>
     </button></ng-template
   >
-  <ng-template carouselSlide>
-    <button class="date-btn" (click)="onSlideClick('test')">Slide 2</button>
-  </ng-template>
-  <ng-template carouselSlide>
-    <button class="date-btn" (click)="onSlideClick('test')">Slide 3</button>
-  </ng-template>
-  <ng-template carouselSlide>
-    <button class="date-btn" (click)="onSlideClick('test')">Slide 4</button>
-  </ng-template>
-  <ng-template carouselSlide>
-    <button class="date-btn" (click)="onSlideClick('test')">Slide 5</button>
-  </ng-template>
-  <ng-template carouselSlide>
-    <button class="date-btn" (click)="onSlideClick('test')">Slide 6</button>
-  </ng-template>
 </owl-carousel-o>

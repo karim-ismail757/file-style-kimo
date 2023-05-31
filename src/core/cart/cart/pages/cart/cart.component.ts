@@ -19,7 +19,6 @@ export class CartComponent implements OnInit {
   getCartData() {
     this.provider.getServicesToCart().subscribe((response) => {
       this.cart = response.Result;
-      debugger;
       this.totalPrice = response?.Result?.TotalPrice;
       this.totalTime = response?.Result?.Booking?.Time;
     });

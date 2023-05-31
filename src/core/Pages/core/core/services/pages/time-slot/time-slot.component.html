@@ -16,8 +16,11 @@
           </select>
         </div>
 
-        <div class="col-md-12">
-          <app-carousel (itemClicked)="onItemClicked($event)"></app-carousel>
+        <div class="col-md-12 mt-4">
+          <app-carousel
+            (itemClicked)="onItemClicked($event)"
+            [data]="currentMonthObj"
+          ></app-carousel>
         </div>
         <div class="hour-slot">
           <h1 class="time-slot-heading" style="direction: rtl">
