@@ -73,16 +73,17 @@
                 </ul>
               </div>
 
-              <div class="select-service d-flex justify-content-between">
+              <div  class="select-service d-flex justify-content-between">
                 <div class="right-service">
-                  <div
+                  <div (click)="dataX($event)"
                     class="form-check d-flex flex-column"
                     *ngFor="let m of category[0].Services; let s = index"
                   >
                     <input
+
                       class="form-check-input"
                       type="checkbox"
-                      value=""
+                      [value]="m.Id"
                       id="defaultCheck1"
                     />
                     <label class="form-check-label" for="defaultCheck1">

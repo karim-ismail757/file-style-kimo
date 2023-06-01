@@ -8,7 +8,7 @@ import { Observable } from 'rxjs';
   providedIn: 'root',
 })
 export class ProviderServicesService {
-
+  servicesIds:any= [];
   cartNo!: number;
   apiUrl = environment.apiUrl;
 
@@ -69,5 +69,10 @@ export class ProviderServicesService {
     `https://api-stage.glamera.com/api/ShoppingCart/Service/${id}`,
       this.getHeaders()
     );
+  }
+
+
+  BookNewServices(body:any ):Observable<any> {
+    return  this.http.post('https://api-stage.glamera.com/api/ShoppingCart', body);
   }
 }

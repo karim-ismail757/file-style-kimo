@@ -1,8 +1,9 @@
-import { Component } from '@angular/core';
+import { Component, Provider } from '@angular/core';
 import { OwlOptions } from 'ngx-owl-carousel-o';
 import { ProviderServicesService } from 'src/provider-services.service';
 import { OnInit } from '@angular/core';
 import { CurrentObjectDate } from 'src/app/models/user';
+import { ActivatedRoute } from '@angular/router';
 
 @Component({
   selector: 'app-time-slot',
@@ -31,13 +32,25 @@ export class TimeSlotComponent implements OnInit {
 
   currentMonthObj!: CurrentObjectDate;
 
-  constructor(private provider: ProviderServicesService) {}
+  constructor(
+    private provider: ProviderServicesService,
+    private activatedRoute: ActivatedRoute
+  ) {
+    const data: any = this.activatedRoute.snapshot.data;
+    console.log(data);
+  }
+
+  serId: any;
+  finalIds: any = [];
   ngOnInit(): void {
     this.getEmp(this.data);
     this.getTimeSlots(this.dataslot);
     this.currentMonthObj = this.getCurrentMonthDays();
     console.log('current month => ', this.currentMonthObj);
+    this.serId = localStorage.getItem('services');
+    this.finalIds = this.serId.parseInt(this.serId);
   }
+  Time: any;
   bookingDate: any;
   selected: any;
   datepipe: any;
@@ -56,7 +69,7 @@ export class TimeSlotComponent implements OnInit {
       console.log(this.emp, 'heloo');
     });
   }
-
+  serviceTime!: number;
   dateHour: any;
   dataslot = {
     DateFrom: '2023-06-03', // this.returnCurrentDate(),
@@ -72,6 +85,11 @@ export class TimeSlotComponent implements OnInit {
       this.dateHour = res;
       console.log(this.dateHour, 'temsah');
     });
+  }
+
+  ngAfterContentInit() {
+    this.serId = localStorage.getItem('services');
+    this.finalIds = this.serId.parseInt(this.serId);
   }
 
   onItemClicked(date: string): void {
@@ -131,5 +149,30 @@ export class TimeSlotComponent implements OnInit {
       month: { name: monthNames[month + 1], number: month + 1 },
       days: days,
     };
+  }
+
+  dataX(e: any) {
+    console.log(e.target.innerText);
+    this.serviceTime = e.target.innerText;
+    this.finalIds = this.serId.parseInt(this.serId);
+  }
+  dataM: any = {
+    
+    AccountSetupId: 18937,
+    Booking: {
+      IsVirusFree: false,
+      ClientAddressId: null,
+      DoneInHome: 0,
+      ServiceIds: this.provider.servicesIds,
+      EmployeeId: -1,
+      Date: this.dataslot,
+      Time: this.serviceTime,
+    },
+  };
+
+  addNewServices(body: any) {
+    this.provider.BookNewServices(this.dataM).subscribe((res) => {
+      console.log(res);
+    });
   }
 }
