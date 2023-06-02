@@ -2,7 +2,6 @@ import { NgModule } from '@angular/core';
 
 import { AccountRoutingModule } from './account-routing.module';
 import { AccountComponent } from './pages/account/account.component';
-import { AuthModule } from '../Authentication/pages/auth/auth.module';
 import { WalletComponent } from './pages/account/pages/wallet/wallet.component';
 import { AppointmentComponent } from './pages/account/pages/appointment/appointment.component';
 import { FavouriteComponent } from './pages/account/pages/favourite/favourite.component';
@@ -18,8 +17,7 @@ import { BookingDoneComponent } from './pages/account/pages/my-booking/booking-d
 import { BookingCancalledComponent } from './pages/account/pages/my-booking/booking-cancalled/booking-cancalled.component';
 import { OrderDetailsComponent } from './pages/account/pages/my-booking/order-details/order-details.component';
 import { CommonModule } from '@angular/common';
-
-
+import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -39,14 +37,7 @@ import { CommonModule } from '@angular/common';
     BookingCancalledComponent,
     OrderDetailsComponent,
   ],
-  imports: [
-    AccountRoutingModule,
-    AuthModule,
-    CommonModule
-    
-    
-
-],
-  exports:[]
+  imports: [AccountRoutingModule, SharedModule, CommonModule],
+  exports: [],
 })
-export class AccountModule { }
+export class AccountModule {}

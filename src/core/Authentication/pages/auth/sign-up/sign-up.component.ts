@@ -5,7 +5,6 @@ import {
   Validators,
   FormBuilder,
 } from '@angular/forms';
-// import { SearchCountryField, CountryISO, PhoneNumberFormat } from 'ngx-intl-tel-input';
 import { AuthService } from './../auth-services/auth.service';
 import { Country } from '@angular-material-extensions/select-country';
 
@@ -26,6 +25,7 @@ export class SignUpComponent {
   ngOnInit(): void {
     this.countryFormGroup = this.formBuilder.group({
       country: [],
+      mobile: [null, Validators.required],
     });
   }
 

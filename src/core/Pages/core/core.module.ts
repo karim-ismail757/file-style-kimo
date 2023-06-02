@@ -5,7 +5,6 @@ import { AboutUsComponent } from './core/about-us/about-us.component';
 import { ContactUsComponent } from './core/contact-us/contact-us.component';
 import { ServicesComponent } from './core/services/services.component';
 import { CoreComponent } from './core/core.component';
-import { AuthModule } from 'src/core/Authentication/pages/auth/auth.module';
 import { MatInputModule } from '@angular/material/input';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { Ng2TelInputModule } from 'ng2-tel-input';
@@ -24,7 +23,6 @@ import { SummaryComponent } from './core/services/pages/summary/summary.componen
 import { NewAddressComponent } from './core/services/pages/new-address/new-address.component';
 import { ManWomanCardComponent } from './core/services/pages/man-woman-card/man-woman-card.component';
 import { TimeSlotComponent } from './core/services/pages/time-slot/time-slot.component';
-import { BrowserModule } from '@angular/platform-browser';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -48,7 +46,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
   imports: [
     CommonModule,
     CoreRoutingModule,
-    AuthModule,
     MatInputModule,
     MatFormFieldModule,
     Ng2TelInputModule,

@@ -1,5 +1,5 @@
-body{
-  background-color: #F2F4F7 !important;
+body {
+  background-color: #f2f4f7 !important;
 }
 * {
   font-family: Poppins;
@@ -44,7 +44,6 @@ left:300px; */
   margin-top: 50px !important;
 }
 
-
 .second-signup-heading {
   font: var(--unnamed-font-style-normal) normal
     var(--unnamed-font-weight-normal) var(--unnamed-font-size-16) /
@@ -61,10 +60,10 @@ left:300px; */
   font-weight: bold;
   font-size: 16px;
 }
-  .btn-sumbit{
-    display: flex;
-    justify-content: center;
-  }
+.btn-sumbit {
+  display: flex;
+  justify-content: center;
+}
 .country-container {
   width: 328px;
   height: 44px;
@@ -72,7 +71,7 @@ left:300px; */
 
 .signup-btn {
   background: var(--unnamed-color-111c4e) 0% 0% no-repeat padding-box;
-  background: #111C4E 0% 0% no-repeat padding-box;
+  background: #111c4e 0% 0% no-repeat padding-box;
   border-radius: 6px;
   opacity: 1;
   color: #fff;
@@ -81,9 +80,6 @@ left:300px; */
   font-weight: bold;
   margin-top: -15px;
   font-size: 16px;
-  
-
-
 }
 ::placeholder {
   letter-spacing: 0px;
@@ -104,71 +100,64 @@ left:300px; */
   margin-top: 0px;
 }
 
-.form-control{
-    background-color: #F2F4F7;
-    margin-top: -23px;
-
-
+.form-control {
+  background-color: #f2f4f7;
+  margin-top: -23px;
 }
-.dropdown-toggle::after{
-    display: none;
+.dropdown-toggle::after {
+  display: none;
 }
 
-.login-link{
-    letter-spacing: 0px;
-color: #1D1D1D;
-text-decoration: none;
-font-size: 13px;
-
-
+.login-link {
+  letter-spacing: 0px;
+  color: #1d1d1d;
+  text-decoration: none;
+  font-size: 13px;
 }
 
 .signup-heading {
-
   padding-top: 60px;
   padding-left: 60px;
   margin-top: 60px;
 }
 
-.second-signup-heading{
+.second-signup-heading {
   margin-bottom: 30px !important;
 }
 
-.horizontal-divider{
-  background-color: #F2F4F7;
-  width:320px;
+.horizontal-divider {
+  background-color: #f2f4f7;
+  width: 320px;
   margin-left: 53px;
-
 }
 
-#login-sec{
-  background-color: #F2F4F7;
-  height: 100%;;
+#login-sec {
+  background-color: #f2f4f7;
+  height: 100%;
 }
-.form-control{
+.form-control {
   border-radius: 4px 4px 0px 0px;
-opacity: 1;
-height: 54px !important;
-margin-bottom: 8px;
+  opacity: 1;
+  height: 54px !important;
+  margin-bottom: 8px;
 }
 
-@media (max-width: 575.98px) { 
-
-  input{
-    width:100% !important;
+@media (max-width: 575.98px) {
+  input {
+    width: 100% !important;
   }
-  .SignUp,.form-control,.btn{
-    width:90%;
+  .SignUp,
+  .form-control,
+  .btn {
+    width: 90%;
   }
 
-  .signup{
+  .signup {
     display: flex;
     justify-content: center;
   }
-  .btn-sumbit{
+  .btn-sumbit {
     display: flex;
     justify-content: center;
   }
-
-  
- }
+}

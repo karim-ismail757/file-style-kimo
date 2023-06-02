@@ -7,19 +7,13 @@ import { SignUpComponent } from './sign-up/sign-up.component';
 import { VerificationPageComponent } from './verification-page/verification-page.component';
 import { MatInputModule } from '@angular/material/input';
 import { FullSignUpComponent } from './full-sign-up/full-sign-up.component';
-import { NavbarComponent } from './navbar/navbar.component';
 import { HeaderComponent } from './header/header.component';
 import { Ng2TelInputModule } from 'ng2-tel-input';
-import { FooterComponent } from './footer/footer.component';
 import { NavAuthComponent } from './nav-auth/nav-auth.component';
-import { HttpClientModule } from '@angular/common/http';
 import { ReactiveFormsModule } from '@angular/forms';
-import { FormControl, FormGroup } from '@angular/forms';
 import { AuthGuardService } from './auth-services/authguard.service';
-import { MatIcon } from '@angular/material/icon';
-import { MatFormField } from '@angular/material/form-field';
+import { MatSelectCountryModule } from '@angular-material-extensions/select-country';
 
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedModule } from 'src/app/shared/shared.module';
 
 @NgModule({
@@ -28,9 +22,7 @@ import { SharedModule } from 'src/app/shared/shared.module';
     SignUpComponent,
     VerificationPageComponent,
     FullSignUpComponent,
-    NavbarComponent,
     HeaderComponent,
-    FooterComponent,
     NavAuthComponent,
   ],
   imports: [
@@ -38,12 +30,11 @@ import { SharedModule } from 'src/app/shared/shared.module';
     AuthRoutingModule,
     MatInputModule,
     Ng2TelInputModule,
-    HttpClientModule,
     ReactiveFormsModule,
-    HttpClientModule,
     SharedModule,
+    MatSelectCountryModule,
   ],
-  exports: [NavbarComponent, HeaderComponent, FooterComponent],
+  exports: [HeaderComponent, MatSelectCountryModule],
   providers: [AuthGuardService],
 })
 export class AuthModule {}
