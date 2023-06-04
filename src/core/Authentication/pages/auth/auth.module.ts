@@ -10,7 +10,6 @@ import { FullSignUpComponent } from './full-sign-up/full-sign-up.component';
 import { HeaderComponent } from './header/header.component';
 import { Ng2TelInputModule } from 'ng2-tel-input';
 import { NavAuthComponent } from './nav-auth/nav-auth.component';
-import { ReactiveFormsModule } from '@angular/forms';
 import { AuthGuardService } from './auth-services/authguard.service';
 import { MatSelectCountryModule } from '@angular-material-extensions/select-country';
 
@@ -30,7 +29,6 @@ import { SharedModule } from 'src/app/shared/shared.module';
     AuthRoutingModule,
     MatInputModule,
     Ng2TelInputModule,
-    ReactiveFormsModule,
     SharedModule,
     MatSelectCountryModule,
   ],

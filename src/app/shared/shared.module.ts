@@ -10,12 +10,15 @@ import {
 } from '@angular-material-extensions/select-country';
 import { CommonModule } from '@angular/common';
 import { HttpClientModule } from '@angular/common/http';
+import { NotFoundComponent } from './components/not-found/not-found.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
 const COMPONENTS = [
   CountryComponent,
   CarouselComponent,
   FooterComponent,
   NavbarComponent,
+  NotFoundComponent,
 ];
 
 const MATERIAL_MODULES = [
@@ -26,8 +29,18 @@ const MATERIAL_MODULES = [
 
 @NgModule({
   declarations: [...COMPONENTS],
-  imports: [...MATERIAL_MODULES, CommonModule],
-  exports: [...MATERIAL_MODULES, ...COMPONENTS],
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    FormsModule,
+    ...MATERIAL_MODULES,
+  ],
+  exports: [
+    ReactiveFormsModule,
+    FormsModule,
+    ...MATERIAL_MODULES,
+    ...COMPONENTS,
+  ],
   providers: [{ provide: MatSelectCountryLangToken, useValue: 'en' }],
 })
 export class SharedModule {}

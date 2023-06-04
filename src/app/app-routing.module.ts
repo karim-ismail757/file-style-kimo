@@ -1,9 +1,16 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
-import { AuthModule } from 'src/core/Authentication/pages/auth/auth.module';
-import { LoginComponent } from 'src/core/Authentication/pages/auth/login/login.component';
+import { NotFoundComponent } from './shared/components/not-found/not-found.component';
+import { LoginComponent } from './authentication/login/login.component';
 
 const routes: Routes = [
+  // {
+  //   path: 'auth',
+  //   loadChildren: () =>
+  //     import('./authentication/authentication.module').then(
+  //       (m) => m.AuthenticationModule
+  //     ),
+  // },
   { path: '', component: LoginComponent },
   {
     path: 'auth',
@@ -27,6 +34,8 @@ const routes: Routes = [
     loadChildren: () =>
       import('src/core/cart/cart/cart.module').then((m) => m.CartModule),
   },
+  { path: '', redirectTo: '/auth', pathMatch: 'full' },
+  { path: '**', component: NotFoundComponent },
 ];
 
 @NgModule({

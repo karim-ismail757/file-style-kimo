@@ -9,8 +9,6 @@ import * as $ from 'jquery';
 import {} from 'ngx-mat-intl-tel-input';
 import { NgxIntlTelInputModule } from 'ngx-intl-tel-input';
 import { Ng2TelInputModule } from 'ng2-tel-input';
-
-import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatIconRegistry } from '@angular/material/icon';
 import { ProviderServicesService } from 'src/provider-services.service';
 import { CommonModule } from '@angular/common';
@@ -23,10 +21,10 @@ import { SharedModule } from './shared/shared.module';
     BrowserAnimationsModule,
     NgxIntlTelInputModule,
     Ng2TelInputModule,
-    ReactiveFormsModule,
+
     AppRoutingModule,
     BrowserAnimationsModule,
-    FormsModule,
+
     AppRoutingModule,
     CommonModule,
     SharedModule,
